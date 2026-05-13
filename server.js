@@ -1,7 +1,3 @@
-// AR TECHNOLOGIES - Pure Node.js - Zero Dependencies
-// CEO: Amit Ramjibhai Joshi
-// No npm install needed - works on any server
-
 const http = require("http");
 const https = require("https");
 const fs = require("fs");
@@ -10,6 +6,18 @@ const url = require("url");
 
 const PORT = process.env.PORT || 3000;
 const GEMINI_KEY = process.env.GEMINI_API_KEY || "AIzaSyB_RETYPX7yAh6JWmbpehUn1piTxWSoRgc";
+
+// Read index.html at startup - works whether in public/ or root
+function getIndexHTML() {
+  const paths = [
+    path.join(__dirname, "public", "index.html"),
+    path.join(__dirname, "index.html"),
+  ];
+  for (const p of paths) {
+    if (fs.existsSync(p)) return fs.readFileSync(p, "utf8");
+  }
+  return "<h1>AR Technologies - Loading...</h1>";
+}
 
 function gemini(contents) {
   return new Promise((resolve, reject) => {
@@ -34,12 +42,11 @@ function gemini(contents) {
       });
     });
     req.on("error", reject);
-    req.write(body);
-    req.end();
+    req.write(body); req.end();
   });
 }
 
-function body(req) {
+function parseBody(req) {
   return new Promise((resolve) => {
     let d = "";
     req.on("data", c => d += c);
@@ -47,7 +54,7 @@ function body(req) {
   });
 }
 
-function json(res, status, data) {
+function sendJSON(res, status, data) {
   res.writeHead(status, {
     "Content-Type": "application/json",
     "Access-Control-Allow-Origin": "*",
@@ -57,21 +64,7 @@ function json(res, status, data) {
   res.end(JSON.stringify(data));
 }
 
-function file(res, fp) {
-  fs.readFile(fp, (err, data) => {
-    if (err) {
-      fs.readFile(path.join(__dirname, "public", "index.html"), (e, html) => {
-        if (e) { res.writeHead(404); res.end("Not found"); return; }
-        res.writeHead(200, { "Content-Type": "text/html; charset=utf-8" });
-        res.end(html);
-      });
-      return;
-    }
-    const types = { ".html": "text/html; charset=utf-8", ".js": "application/javascript", ".css": "text/css", ".json": "application/json", ".png": "image/png", ".ico": "image/x-icon" };
-    res.writeHead(200, { "Content-Type": types[path.extname(fp)] || "text/plain" });
-    res.end(data);
-  });
-}
+const INDEX_HTML = getIndexHTML();
 
 http.createServer(async (req, res) => {
   const p = url.parse(req.url).pathname;
@@ -82,13 +75,13 @@ http.createServer(async (req, res) => {
   }
 
   if (p === "/health") {
-    json(res, 200, { status: "online", company: "AR Technologies", ceo: "Amit Ramjibhai Joshi" });
+    sendJSON(res, 200, { status: "online", company: "AR Technologies", ceo: "Amit Ramjibhai Joshi" });
     return;
   }
 
   if (p === "/api/ai" && req.method === "POST") {
     try {
-      const { messages, system } = await body(req);
+      const { messages, system } = await parseBody(req);
       const contents = [];
       if (system) {
         contents.push({ role: "user", parts: [{ text: system }] });
@@ -99,38 +92,31 @@ http.createServer(async (req, res) => {
         parts: [{ text: m.content }]
       }));
       const text = await gemini(contents);
-      json(res, 200, { content: [{ type: "text", text }] });
-    } catch(e) { json(res, 500, { error: e.message }); }
+      sendJSON(res, 200, { content: [{ type: "text", text }] });
+    } catch(e) { sendJSON(res, 500, { error: e.message }); }
     return;
   }
 
   if (p === "/api/translate" && req.method === "POST") {
     try {
-      const { text, from, to } = await body(req);
+      const { text, from, to } = await parseBody(req);
       const contents = [
-        { role: "user", parts: [{ text: "You are a translator. Return ONLY the translated text." }] },
+        { role: "user", parts: [{ text: "Translate accurately. Return ONLY translated text." }] },
         { role: "model", parts: [{ text: "OK." }] },
-        { role: "user", parts: [{ text: `Translate from ${from || "auto"} to ${to}:\n\n${text}` }] }
+        { role: "user", parts: [{ text: `Translate from ${from||"auto"} to ${to}:\n\n${text}` }] }
       ];
       const translated = await gemini(contents);
-      json(res, 200, { translated });
-    } catch(e) { json(res, 500, { error: e.message }); }
+      sendJSON(res, 200, { translated });
+    } catch(e) { sendJSON(res, 500, { error: e.message }); }
     return;
   }
 
-  if (req.method === "GET") {
-    const fp = (p === "/" || p === "/index.html")
-      ? path.join(__dirname, "public", "index.html")
-      : path.join(__dirname, "public", p);
-    file(res, fp);
-    return;
-  }
-
-  json(res, 404, { error: "Not found" });
+  // Serve index.html for ALL routes
+  res.writeHead(200, { "Content-Type": "text/html; charset=utf-8" });
+  res.end(INDEX_HTML);
 
 }).listen(PORT, () => {
   console.log("✅ AR Technologies running on port " + PORT);
   console.log("✅ CEO: Amit Ramjibhai Joshi");
   console.log("✅ AI: Google Gemini FREE");
-  console.log("✅ No dependencies needed");
 });
