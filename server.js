@@ -1,11 +1,11 @@
-const http = require("http");
+      const http = require("http");
 const https = require("https");
 const fs = require("fs");
 const path = require("path");
 const url = require("url");
 
 const PORT = process.env.PORT || 3000;
-const GEMINI_KEY = process.env.GEMINI_API_KEY || "AIzaSyB_RETYPX7yAh6JWmbpehUn1piTxWSoRgc";
+const GEMINI_KEY = process.env.GEMINI_API_KEY || "AIzaSyDOh7vg5Iy78dHt1gMkr0FpnZEOd_dvdMI";
 
 // Read index.html at startup - works whether in public/ or root
 function getIndexHTML() {
@@ -119,4 +119,4 @@ http.createServer(async (req, res) => {
   console.log("✅ AR Technologies running on port " + PORT);
   console.log("✅ CEO: Amit Ramjibhai Joshi");
   console.log("✅ AI: Google Gemini FREE");
-});
+});  
