@@ -127,3 +127,6 @@ http.createServer(async (req, res) => {
   console.log("✅ CEO: Amit Ramjibhai Joshi");
   console.log("✅ AI: Groq FREE - No limits!");
 });
+
+// ── IMAGE GENERATION via Pollinations (FREE, no key needed) ──
+// Already handled in frontend directly
