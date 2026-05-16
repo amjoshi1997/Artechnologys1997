@@ -23,7 +23,7 @@ header{position:sticky;top:0;z-index:100;display:flex;align-items:center;justify
 .ceo-name{font-size:11px;font-weight:700;color:#ffd700;text-align:right}
 .ceo-title{font-size:8px;color:rgba(255,215,0,0.4);letter-spacing:2px;text-align:right}
 .online{display:flex;align-items:center;gap:4px;font-size:9px;color:#00ff88;margin-top:2px;justify-content:flex-end}
-.online-dot{width:5px;height:5px;background:#00ff88;border-radius:50%;animation:pulse 1.2s infinite}
+.od{width:5px;height:5px;background:#00ff88;border-radius:50%;animation:pulse 1.2s infinite}
 #tabs{position:sticky;top:62px;z-index:99;display:flex;border-bottom:1px solid rgba(0,245,255,0.18);background:rgba(1,10,20,0.95);overflow-x:auto}
 .tab{padding:9px 11px;font-size:9px;color:rgba(0,245,255,0.4);cursor:pointer;border-bottom:2px solid transparent;white-space:nowrap;transition:all 0.2s}
 .tab:hover,.tab.active{color:#00f5ff;border-bottom-color:#00f5ff;background:rgba(0,245,255,0.05)}
@@ -44,6 +44,7 @@ header{position:sticky;top:0;z-index:100;display:flex;align-items:center;justify
 .il{font-size:9px;letter-spacing:2px;color:rgba(0,245,255,0.4);display:block;margin-bottom:4px}
 textarea.inp{resize:none}
 .g2{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.g3{display:grid;grid-template-columns:1fr 1fr 1fr;gap:10px}
 .sc{border:1px solid rgba(0,245,255,0.18);background:rgba(0,245,255,0.03);padding:13px;cursor:pointer;transition:all 0.2s}
 .sc:hover{border-color:rgba(0,245,255,0.4);background:rgba(0,245,255,0.06)}
 .sv{font-size:20px;font-weight:900;margin-bottom:3px}
@@ -99,24 +100,20 @@ textarea.inp{resize:none}
 .ir{width:100%;border:1px solid rgba(0,245,255,0.18);margin-top:12px;display:none;position:relative}
 .ir img{width:100%;display:block}
 .io{position:absolute;bottom:0;left:0;right:0;padding:8px 12px;background:rgba(1,10,20,0.85);font-size:11px;color:rgba(0,245,255,0.7)}
-.il2{width:100%;height:220px;border:1px solid rgba(0,245,255,0.18);margin-top:12px;display:none;align-items:center;justify-content:center;flex-direction:column;gap:12px;background:#000d1a}
+.il2{width:100%;height:200px;border:1px solid rgba(0,245,255,0.18);margin-top:12px;display:none;align-items:center;justify-content:center;flex-direction:column;gap:12px;background:#000d1a}
 .bo{background:#000d1a;border:1px solid rgba(0,245,255,0.2);padding:16px;margin-top:12px;font-family:monospace;font-size:12px;line-height:1.8;color:#00f5ff;white-space:pre-wrap;max-height:380px;overflow-y:auto;display:none}
-.dh{background:linear-gradient(135deg,#010a14,#021428);border:1px solid rgba(0,245,255,0.2);padding:22px;text-align:center;margin-bottom:14px}
-.dt{font-size:20px;font-weight:900;color:#00f5ff;text-shadow:0 0 20px #00f5ff;margin-bottom:5px}
-.ds{font-size:11px;color:rgba(0,245,255,0.5);letter-spacing:3px;margin-bottom:14px}
-.dsg{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-top:14px}
-.dsc{border:1px solid rgba(0,245,255,0.15);padding:11px;text-align:center}
-.dsv{font-size:18px;font-weight:900;color:#00f5ff}
-.dsl{font-size:9px;color:rgba(0,245,255,0.4);letter-spacing:2px;margin-top:2px}
-.svc{border:1px solid rgba(0,245,255,0.15);padding:14px;margin-bottom:10px;display:flex;gap:12px;align-items:flex-start;cursor:pointer;transition:all 0.2s}
-.svc:hover{border-color:rgba(0,245,255,0.4);background:rgba(0,245,255,0.04)}
-.si{font-size:26px;flex-shrink:0}
-.sn{font-size:13px;font-weight:700;color:#fff;margin-bottom:3px}
-.sd{font-size:12px;color:rgba(168,216,234,0.5);line-height:1.5}
-.vp{width:100%;height:180px;background:#000d1a;border:1px solid rgba(0,245,255,0.18);display:flex;align-items:center;justify-content:center;flex-direction:column;gap:9px;margin-bottom:10px;cursor:pointer;transition:all 0.2s}
+.model-card{border:1px solid rgba(0,245,255,0.15);background:rgba(0,245,255,0.03);padding:14px;transition:all 0.2s}
+.model-card:hover{border-color:rgba(0,245,255,0.4);background:rgba(0,245,255,0.06)}
+.file-card{border:1px solid rgba(0,245,255,0.12);background:rgba(0,245,255,0.02);padding:11px;margin-bottom:8px;display:flex;align-items:center;gap:10px}
+.file-icon{font-size:24px;flex-shrink:0}
+.file-name{flex:1;font-size:13px;font-weight:600;color:#fff}
+.file-meta{font-size:10px;color:rgba(168,216,234,0.4);margin-top:2px}
+.gdrive-box{border:2px dashed rgba(0,245,255,0.2);padding:20px;text-align:center;cursor:pointer;transition:all 0.2s;margin-bottom:14px}
+.gdrive-box:hover{border-color:rgba(0,245,255,0.5);background:rgba(0,245,255,0.03)}
+.vp{width:100%;height:160px;background:#000d1a;border:1px solid rgba(0,245,255,0.18);display:flex;align-items:center;justify-content:center;flex-direction:column;gap:9px;margin-bottom:10px;cursor:pointer;transition:all 0.2s}
 .vp:hover{border-color:rgba(0,245,255,0.4)}
 .pb2{width:44px;height:44px;border:2px solid #00f5ff;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:16px}
-@media(max-width:480px){.g2{grid-template-columns:1fr}.tg{grid-template-columns:repeat(3,1fr)}.dsg{grid-template-columns:1fr 1fr}}
+@media(max-width:480px){.g2,.g3{grid-template-columns:1fr}.tg{grid-template-columns:repeat(3,1fr)}}
 </style>
 </head>
 <body>
@@ -128,17 +125,20 @@ textarea.inp{resize:none}
   <div>
     <div class="ceo-name">AMIT R. JOSHI</div>
     <div class="ceo-title">CO-FOUNDER & CEO</div>
-    <div class="online"><span class="online-dot"></span>ONLINE</div>
+    <div class="online"><span class="od"></span><span id="st">ONLINE</span></div>
   </div>
 </header>
 
 <div id="tabs">
-  <div class="tab active" onclick="ST('dashboard',this)">📊 DASH</div>
+  <div class="tab active" onclick="ST('dash',this)">📊 DASH</div>
   <div class="tab" onclick="ST('projects',this)">📁 PROJECTS</div>
   <div class="tab" onclick="ST('create',this)">➕ NEW</div>
   <div class="tab" onclick="ST('v3d',this)">🧊 3D VIEWER</div>
+  <div class="tab" onclick="ST('models',this)">⬇️ 3D DOWNLOADS</div>
   <div class="tab" onclick="ST('img',this)">🎨 AI IMAGES</div>
   <div class="tab" onclick="ST('bp',this)">📐 BLUEPRINT</div>
+  <div class="tab" onclick="ST('files',this)">📁 FILES</div>
+  <div class="tab" onclick="ST('gdrive',this)">🔗 GOOGLE DRIVE</div>
   <div class="tab" onclick="ST('demo',this)">🎬 DEMO</div>
   <div class="tab" onclick="ST('clients',this)">💼 CLIENTS</div>
   <div class="tab" onclick="ST('ai',this)">🤖 AI CHAT</div>
@@ -147,19 +147,21 @@ textarea.inp{resize:none}
 </div>
 
 <!-- DASHBOARD -->
-<div class="page active" id="page-dashboard">
+<div class="page active" id="page-dash">
   <div class="g2" style="margin-bottom:14px">
     <div class="sc" onclick="ST('projects',document.querySelectorAll('.tab')[1])"><div style="font-size:22px;margin-bottom:3px">📁</div><div class="sv" style="color:#00f5ff" id="dp">0</div><div class="sl">PROJECTS</div></div>
-    <div class="sc" onclick="ST('clients',document.querySelectorAll('.tab')[7])"><div style="font-size:22px;margin-bottom:3px">💼</div><div class="sv" style="color:#ffd700" id="dc">0</div><div class="sl">CLIENTS</div></div>
-    <div class="sc" onclick="ST('revenue',document.querySelectorAll('.tab')[10])"><div style="font-size:22px;margin-bottom:3px">💰</div><div class="sv" style="color:#00ff88" id="dr">₹0</div><div class="sl">REVENUE</div></div>
-    <div class="sc" onclick="ST('v3d',document.querySelectorAll('.tab')[3])"><div style="font-size:22px;margin-bottom:3px">🧊</div><div class="sv" style="color:#b44fff">3D</div><div class="sl">STUDIO</div></div>
+    <div class="sc" onclick="ST('clients',document.querySelectorAll('.tab')[10])"><div style="font-size:22px;margin-bottom:3px">💼</div><div class="sv" style="color:#ffd700" id="dc">0</div><div class="sl">CLIENTS</div></div>
+    <div class="sc" onclick="ST('revenue',document.querySelectorAll('.tab')[13])"><div style="font-size:22px;margin-bottom:3px">💰</div><div class="sv" style="color:#00ff88" id="dr">₹0</div><div class="sl">REVENUE</div></div>
+    <div class="sc" onclick="ST('files',document.querySelectorAll('.tab')[7])"><div style="font-size:22px;margin-bottom:3px">📁</div><div class="sv" style="color:#b44fff" id="dfl">0</div><div class="sl">FILES SAVED</div></div>
   </div>
-  <div style="font-size:9px;letter-spacing:3px;color:#00f5ff;margin-bottom:12px">⚡ NEW AI FEATURES</div>
+  <div style="font-size:9px;letter-spacing:3px;color:#00f5ff;margin-bottom:12px">⚡ ALL FEATURES</div>
   <div class="g2" style="margin-bottom:14px">
-    <div class="sc" onclick="ST('v3d',document.querySelectorAll('.tab')[3])"><div style="font-size:24px;margin-bottom:5px">🧊</div><div style="font-size:12px;color:#b44fff;font-weight:700">3D Model Viewer</div><div style="font-size:10px;color:rgba(168,216,234,0.35);margin-top:2px">Interactive 3D animation</div></div>
-    <div class="sc" onclick="ST('img',document.querySelectorAll('.tab')[4])"><div style="font-size:24px;margin-bottom:5px">🎨</div><div style="font-size:12px;color:#ffd700;font-weight:700">AI Image Generator</div><div style="font-size:10px;color:rgba(168,216,234,0.35);margin-top:2px">Generate design images</div></div>
-    <div class="sc" onclick="ST('bp',document.querySelectorAll('.tab')[5])"><div style="font-size:24px;margin-bottom:5px">📐</div><div style="font-size:12px;color:#00f5ff;font-weight:700">AI Blueprint</div><div style="font-size:10px;color:rgba(168,216,234,0.35);margin-top:2px">Technical CAD specs</div></div>
-    <div class="sc" onclick="ST('demo',document.querySelectorAll('.tab')[6])"><div style="font-size:24px;margin-bottom:5px">🎬</div><div style="font-size:12px;color:#ff6b35;font-weight:700">Demo Page</div><div style="font-size:10px;color:rgba(168,216,234,0.35);margin-top:2px">Show clients your work</div></div>
+    <div class="sc" onclick="ST('v3d',document.querySelectorAll('.tab')[3])"><div style="font-size:22px;margin-bottom:4px">🧊</div><div style="font-size:12px;color:#b44fff;font-weight:700">3D Model Viewer</div><div style="font-size:10px;color:rgba(168,216,234,0.35);margin-top:2px">Interactive 3D animation</div></div>
+    <div class="sc" onclick="ST('models',document.querySelectorAll('.tab')[4])"><div style="font-size:22px;margin-bottom:4px">⬇️</div><div style="font-size:12px;color:#00ff88;font-weight:700">Download 3D Models</div><div style="font-size:10px;color:rgba(168,216,234,0.35);margin-top:2px">Free OBJ/STL files</div></div>
+    <div class="sc" onclick="ST('img',document.querySelectorAll('.tab')[5])"><div style="font-size:22px;margin-bottom:4px">🎨</div><div style="font-size:12px;color:#ffd700;font-weight:700">AI Image Generator</div><div style="font-size:10px;color:rgba(168,216,234,0.35);margin-top:2px">Generate design images</div></div>
+    <div class="sc" onclick="ST('bp',document.querySelectorAll('.tab')[6])"><div style="font-size:22px;margin-bottom:4px">📐</div><div style="font-size:12px;color:#00f5ff;font-weight:700">AI Blueprint</div><div style="font-size:10px;color:rgba(168,216,234,0.35);margin-top:2px">Technical CAD specs</div></div>
+    <div class="sc" onclick="ST('files',document.querySelectorAll('.tab')[7])"><div style="font-size:22px;margin-bottom:4px">📁</div><div style="font-size:12px;color:#ff6b35;font-weight:700">File Manager</div><div style="font-size:10px;color:rgba(168,216,234,0.35);margin-top:2px">Upload & manage files</div></div>
+    <div class="sc" onclick="ST('gdrive',document.querySelectorAll('.tab')[8])"><div style="font-size:22px;margin-bottom:4px">🔗</div><div style="font-size:12px;color:#00ff88;font-weight:700">Google Drive</div><div style="font-size:10px;color:rgba(168,216,234,0.35);margin-top:2px">Connect & share files</div></div>
   </div>
   <div style="font-size:9px;letter-spacing:3px;color:#00f5ff;margin-bottom:12px">📁 RECENT PROJECTS</div>
   <div id="dpr"></div>
@@ -169,7 +171,7 @@ textarea.inp{resize:none}
 <div class="page" id="page-projects">
   <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:14px">
     <div style="font-size:9px;letter-spacing:3px;color:#00f5ff" id="pct">0 PROJECTS</div>
-    <button class="btn btn-gold" onclick="ST('create',document.querySelectorAll('.tab')[2])">➕ NEW</button>
+    <button class="btn btn-gold" onclick="ST('create',document.querySelectorAll('.tab')[2])">➕ NEW PROJECT</button>
   </div>
   <div id="pl"></div>
 </div>
@@ -183,7 +185,7 @@ textarea.inp{resize:none}
 <!-- CREATE -->
 <div class="page" id="page-create">
   <div class="panel">
-    <div class="pt">SELECT TYPE</div>
+    <div class="pt">SELECT PROJECT TYPE</div>
     <div class="tg" id="tg">
       <div class="to sel" data-type="2d" onclick="selT(this)"><span class="ti2">📐</span><span class="tn">2D</span></div>
       <div class="to" data-type="3d" onclick="selT(this)"><span class="ti2">🧊</span><span class="tn">3D</span></div>
@@ -196,7 +198,7 @@ textarea.inp{resize:none}
     <div class="g2">
       <div><label class="il">CLIENT</label><input class="inp" id="pcl" placeholder="Client name..."></div>
       <div><label class="il">BUDGET (₹)</label><input class="inp" type="number" id="pb3" placeholder="500000"></div>
-      <div><label class="il">START</label><input class="inp" type="date" id="ps"></div>
+      <div><label class="il">START DATE</label><input class="inp" type="date" id="ps"></div>
       <div><label class="il">DEADLINE</label><input class="inp" type="date" id="pdl"></div>
     </div>
     <div style="display:flex;gap:8px;margin-top:8px;flex-wrap:wrap">
@@ -215,7 +217,6 @@ textarea.inp{resize:none}
 <div class="page" id="page-v3d">
   <div style="font-size:9px;letter-spacing:3px;color:#00f5ff;margin-bottom:12px">🧊 3D DESIGN STUDIO</div>
   <div class="panel">
-    <div class="pt">SELECT 3D MODEL</div>
     <div class="mb2">
       <div class="mb3 ma2" onclick="l3d('cube',this)">📦 Cube</div>
       <div class="mb3" onclick="l3d('sphere',this)">⚪ Sphere</div>
@@ -234,65 +235,56 @@ textarea.inp{resize:none}
       <button class="btn btn-gold" onclick="exv()">💥 Explode</button>
       <button class="btn btn-green" onclick="rvw()">🔄 Reset</button>
     </div>
-    <div style="font-size:11px;color:rgba(0,245,255,0.4);padding:8px;border:1px solid rgba(0,245,255,0.1);margin-top:8px;line-height:1.6" id="mi">📐 Model: Cube | Vertices: 8 | Faces: 6 | Material: Metal<br>🖱️ Drag to rotate | Scroll to zoom</div>
+    <div style="font-size:11px;color:rgba(0,245,255,0.4);padding:8px;border:1px solid rgba(0,245,255,0.1);margin-top:8px;line-height:1.6" id="mi">📐 Model: Cube | Drag to rotate | Scroll to zoom</div>
   </div>
   <div class="panel" style="border-color:rgba(180,79,255,0.3)">
     <div class="pt" style="color:#b44fff">🤖 AI 3D DESIGN ASSISTANT</div>
-    <label class="il">DESCRIBE YOUR 3D PROJECT</label>
     <textarea class="inp" style="height:65px" id="3dp" placeholder="e.g. Design a 3D car engine for manufacturing..."></textarea>
     <button class="btn btn-pu" onclick="ai3d()" id="a3b">🤖 ANALYZE & GENERATE SPECS</button>
     <div id="a3o" style="margin-top:10px;font-size:12px;color:rgba(168,216,234,0.7);line-height:1.7;display:none"></div>
   </div>
-  <div class="panel">
-    <div class="pt">🌐 3D MODEL LIBRARY</div>
-    <div class="g2">
-      <div class="vp" onclick="osk('6f85f5764c6a4df6aa91e26c59a64a69')"><div class="pb2">▶</div><div style="font-size:11px;color:rgba(0,245,255,0.6)">🏭 Industrial Engine</div></div>
-      <div class="vp" onclick="osk('bca4f59d80ac46dfab4d5a2e76f04d44')"><div class="pb2">▶</div><div style="font-size:11px;color:rgba(0,245,255,0.6)">🚁 Defence Drone</div></div>
-    </div>
-    <div id="ske" style="display:none;margin-top:10px"></div>
-  </div>
 </div>
 
-<!-- AI IMAGE GENERATOR -->
+<!-- 3D DOWNLOADS -->
+<div class="page" id="page-models">
+  <div style="font-size:9px;letter-spacing:3px;color:#00f5ff;margin-bottom:12px">⬇️ 3D MODEL DOWNLOADS</div>
+  <div class="panel" style="border-color:rgba(0,255,136,0.3);background:rgba(0,255,136,0.02);margin-bottom:14px">
+    <div style="font-size:12px;color:rgba(0,255,136,0.8);line-height:1.7">✅ Download FREE professional 3D models for your projects.<br>Formats: OBJ, STL, FBX — compatible with AutoCAD, Blender, FreeCAD, Fusion 360</div>
+  </div>
+  <div id="models-grid"></div>
+</div>
+
+<!-- AI IMAGES -->
 <div class="page" id="page-img">
   <div style="font-size:9px;letter-spacing:3px;color:#00f5ff;margin-bottom:12px">🎨 AI IMAGE GENERATOR</div>
   <div class="panel">
-    <div class="pt">GENERATE DESIGN IMAGES WITH AI</div>
     <label class="il">DESCRIBE YOUR DESIGN</label>
-    <textarea class="inp" style="height:75px" id="ip" placeholder="e.g. futuristic 3D car engine design, defence radar system, manufacturing plant layout..."></textarea>
+    <textarea class="inp" style="height:75px" id="ip" placeholder="e.g. futuristic 3D car engine design, defence radar system, manufacturing plant..."></textarea>
     <div class="g2" style="margin-bottom:10px">
       <div><label class="il">STYLE</label>
-        <select class="inp" id="is">
-          <option value="technical blueprint">Technical Blueprint</option>
-          <option value="3D render">3D Render</option>
-          <option value="CAD design">CAD Design</option>
-          <option value="futuristic concept">Futuristic Concept</option>
-          <option value="industrial design">Industrial Design</option>
-          <option value="defence technology">Defence Technology</option>
-          <option value="photorealistic">Photorealistic</option>
-        </select>
+        <select class="inp" id="is2"><option value="technical blueprint">Technical Blueprint</option><option value="3D render">3D Render</option><option value="CAD design">CAD Design</option><option value="futuristic concept">Futuristic Concept</option><option value="industrial design">Industrial Design</option><option value="defence technology">Defence Technology</option><option value="photorealistic">Photorealistic</option></select>
       </div>
       <div><label class="il">FORMAT</label>
-        <select class="inp" id="if2">
-          <option value="landscape">Landscape</option>
-          <option value="square">Square</option>
-          <option value="portrait">Portrait</option>
-        </select>
+        <select class="inp" id="if2"><option value="landscape">Landscape</option><option value="square">Square</option><option value="portrait">Portrait</option></select>
       </div>
     </div>
-    <button class="btn btn-gold" onclick="genImg()" id="gib">🎨 GENERATE IMAGE</button>
+    <div style="display:flex;gap:8px;flex-wrap:wrap">
+      <button class="btn btn-gold" onclick="genImg()" id="gib">🎨 GENERATE IMAGE</button>
+      <button class="btn btn-pu" onclick="genVar()">🔄 VARIATION</button>
+      <button class="btn btn-green" onclick="dlImg()">⬇️ DOWNLOAD</button>
+      <button class="btn btn-or" onclick="saveImgToFiles()">💾 SAVE TO FILES</button>
+    </div>
     <div class="il2" id="il3"><div class="sp2"><span class="s"></span><span class="s"></span><span class="s"></span></div><div style="font-size:11px;color:rgba(0,245,255,0.5)">AI generating your design...</div></div>
     <div class="ir" id="iR"><img id="gi" src="" alt="Generated Design"><div class="io" id="ic2"></div></div>
-    <div style="display:flex;gap:8px;flex-wrap:wrap;margin-top:10px;display:none" id="ia"><button class="btn" onclick="dlImg()">⬇️ DOWNLOAD</button><button class="btn btn-pu" onclick="genVar()">🔄 VARIATION</button></div>
   </div>
   <div class="panel">
     <div class="pt">QUICK TEMPLATES</div>
     <div class="g2">
-      <div class="sc" onclick="qGen('futuristic 3D car engine technical blueprint CAD design professional')"><div style="font-size:20px;margin-bottom:4px">⚙️</div><div style="font-size:12px;color:#00f5ff;font-weight:700">Engine Design</div></div>
-      <div class="sc" onclick="qGen('modern manufacturing plant layout industrial design aerial view technical')"><div style="font-size:20px;margin-bottom:4px">🏭</div><div style="font-size:12px;color:#ff6b35;font-weight:700">Factory Layout</div></div>
-      <div class="sc" onclick="qGen('defence radar system futuristic military technology design blueprint')"><div style="font-size:20px;margin-bottom:4px">🛡️</div><div style="font-size:12px;color:#ff4444;font-weight:700">Defence System</div></div>
-      <div class="sc" onclick="qGen('4D animation visualization abstract technology design colorful futuristic')"><div style="font-size:20px;margin-bottom:4px">🌀</div><div style="font-size:12px;color:#ffd700;font-weight:700">4D Animation</div></div>
-      <div class="sc" onclick="qGen('futuristic building architecture 3D render smart modern glass design')"><div style="font-size:20px;margin-bottom:4px">🏗️</div><div style="font-size:12px;color:#b44fff;font-weight:700">Architecture</div></div>
+      <div class="sc" onclick="qGen('futuristic 3D car engine technical blueprint CAD professional')"><div style="font-size:20px;margin-bottom:4px">⚙️</div><div style="font-size:12px;color:#00f5ff;font-weight:700">Engine Design</div></div>
+      <div class="sc" onclick="qGen('modern manufacturing plant layout industrial design aerial technical')"><div style="font-size:20px;margin-bottom:4px">🏭</div><div style="font-size:12px;color:#ff6b35;font-weight:700">Factory Layout</div></div>
+      <div class="sc" onclick="qGen('defence radar system futuristic military technology blueprint')"><div style="font-size:20px;margin-bottom:4px">🛡️</div><div style="font-size:12px;color:#ff4444;font-weight:700">Defence System</div></div>
+      <div class="sc" onclick="qGen('4D animation visualization abstract technology colorful futuristic')"><div style="font-size:20px;margin-bottom:4px">🌀</div><div style="font-size:12px;color:#ffd700;font-weight:700">4D Animation</div></div>
+      <div class="sc" onclick="qGen('futuristic building architecture 3D render smart glass modern')"><div style="font-size:20px;margin-bottom:4px">🏗️</div><div style="font-size:12px;color:#b44fff;font-weight:700">Architecture</div></div>
       <div class="sc" onclick="qGen('robotic arm manufacturing automation industrial technology design')"><div style="font-size:20px;margin-bottom:4px">🤖</div><div style="font-size:12px;color:#00ff88;font-weight:700">Robotics</div></div>
     </div>
   </div>
@@ -302,51 +294,106 @@ textarea.inp{resize:none}
 <div class="page" id="page-bp">
   <div style="font-size:9px;letter-spacing:3px;color:#00f5ff;margin-bottom:12px">📐 AI BLUEPRINT GENERATOR</div>
   <div class="panel">
-    <div class="pt">GENERATE TECHNICAL SPECIFICATIONS</div>
     <label class="il">PROJECT TYPE</label>
-    <select class="inp" id="bt">
-      <option>2D Engineering Blueprint</option>
-      <option>3D CAD Specifications</option>
-      <option>4D Animation Storyboard</option>
-      <option>Manufacturing Process Plan</option>
-      <option>Defence System Design</option>
-      <option>Architectural Layout</option>
-      <option>Electrical Circuit Design</option>
-      <option>Mechanical Assembly</option>
-    </select>
-    <label class="il">PROJECT DESCRIPTION (any language)</label>
-    <textarea class="inp" style="height:80px" id="bd" placeholder="Describe what you want to design... किसी भी भाषा में लिखें..."></textarea>
+    <select class="inp" id="bt"><option>2D Engineering Blueprint</option><option>3D CAD Specifications</option><option>4D Animation Storyboard</option><option>Manufacturing Process Plan</option><option>Defence System Design</option><option>Architectural Layout</option><option>Electrical Circuit Design</option><option>Mechanical Assembly</option></select>
+    <label class="il">DESCRIPTION (any language)</label>
+    <textarea class="inp" style="height:80px" id="bd" placeholder="Describe your project... किसी भी भाषा में लिखें..."></textarea>
     <div class="g2" style="margin-bottom:10px">
       <div><label class="il">DIMENSIONS</label><input class="inp" id="bdm" placeholder="e.g. 50m x 30m x 20m"></div>
       <div><label class="il">MATERIAL</label><input class="inp" id="bmt" placeholder="e.g. Steel, Aluminium"></div>
     </div>
-    <button class="btn btn-gold" onclick="genBP()" id="bpb">📐 GENERATE BLUEPRINT</button>
-    <div class="bo" id="bpo"></div>
-    <div style="display:flex;gap:8px;flex-wrap:wrap;margin-top:10px;display:none" id="bpa">
+    <div style="display:flex;gap:8px;flex-wrap:wrap">
+      <button class="btn btn-gold" onclick="genBP()" id="bpb">📐 GENERATE BLUEPRINT</button>
       <button class="btn" onclick="cpBP()">📋 COPY</button>
-      <button class="btn btn-gold" onclick="expBP()">📄 EXPORT</button>
-      <button class="btn btn-pu" onclick="bpToAI()">🤖 ANALYZE</button>
+      <button class="btn btn-green" onclick="expBP()">📄 DOWNLOAD</button>
+      <button class="btn btn-or" onclick="saveBPToFiles()">💾 SAVE TO FILES</button>
     </div>
+    <div class="bo" id="bpo"></div>
   </div>
   <div class="panel">
     <div class="pt">QUICK TEMPLATES</div>
-    <div class="sc" style="display:flex;align-items:center;gap:10px;margin-bottom:8px" onclick="ldBPT('Industrial Engine')"><div style="font-size:20px">⚙️</div><div><div style="font-weight:700;font-size:13px">Industrial Engine</div><div style="font-size:11px;color:rgba(168,216,234,0.45)">Mechanical assembly blueprint</div></div></div>
-    <div class="sc" style="display:flex;align-items:center;gap:10px;margin-bottom:8px" onclick="ldBPT('Defence Radar System')"><div style="font-size:20px">🛡️</div><div><div style="font-weight:700;font-size:13px">Defence Radar System</div><div style="font-size:11px;color:rgba(168,216,234,0.45)">Electronic defence blueprint</div></div></div>
-    <div class="sc" style="display:flex;align-items:center;gap:10px;margin-bottom:8px" onclick="ldBPT('Manufacturing Plant')"><div style="font-size:20px">🏭</div><div><div style="font-weight:700;font-size:13px">Manufacturing Plant</div><div style="font-size:11px;color:rgba(168,216,234,0.45)">Full plant layout</div></div></div>
-    <div class="sc" style="display:flex;align-items:center;gap:10px" onclick="ldBPT('Smart Building')"><div style="font-size:20px">🏢</div><div><div style="font-weight:700;font-size:13px">Smart Building</div><div style="font-size:11px;color:rgba(168,216,234,0.45)">Architectural blueprint</div></div></div>
+    <div class="sc" style="display:flex;align-items:center;gap:10px;margin-bottom:8px" onclick="ldBPT('Industrial Engine')"><div style="font-size:18px">⚙️</div><div><div style="font-weight:700;font-size:13px">Industrial Engine</div><div style="font-size:11px;color:rgba(168,216,234,0.4)">Mechanical assembly</div></div></div>
+    <div class="sc" style="display:flex;align-items:center;gap:10px;margin-bottom:8px" onclick="ldBPT('Defence Radar')"><div style="font-size:18px">🛡️</div><div><div style="font-weight:700;font-size:13px">Defence Radar System</div><div style="font-size:11px;color:rgba(168,216,234,0.4)">Electronic defence</div></div></div>
+    <div class="sc" style="display:flex;align-items:center;gap:10px;margin-bottom:8px" onclick="ldBPT('Manufacturing Plant')"><div style="font-size:18px">🏭</div><div><div style="font-weight:700;font-size:13px">Manufacturing Plant</div><div style="font-size:11px;color:rgba(168,216,234,0.4)">Full plant layout</div></div></div>
+    <div class="sc" style="display:flex;align-items:center;gap:10px" onclick="ldBPT('Smart Building')"><div style="font-size:18px">🏢</div><div><div style="font-weight:700;font-size:13px">Smart Building</div><div style="font-size:11px;color:rgba(168,216,234,0.4)">Architectural blueprint</div></div></div>
+  </div>
+</div>
+
+<!-- FILE MANAGER -->
+<div class="page" id="page-files">
+  <div style="font-size:9px;letter-spacing:3px;color:#00f5ff;margin-bottom:12px">📁 FILE MANAGER</div>
+  <div class="panel" style="border-color:rgba(255,215,0,0.3);background:rgba(255,215,0,0.02)">
+    <div class="pt" style="color:#ffd700">📤 ADD FILE / LINK</div>
+    <label class="il">FILE NAME</label><input class="inp" id="fn" placeholder="e.g. Engine Blueprint v2.pdf">
+    <label class="il">FILE TYPE</label>
+    <select class="inp" id="ft"><option value="📐">📐 Blueprint/CAD</option><option value="🧊">🧊 3D Model</option><option value="🎨">🎨 Image/Design</option><option value="🎬">🎬 Video</option><option value="📄">📄 Document</option><option value="🔗">🔗 Link/URL</option></select>
+    <label class="il">LINK / URL (Google Drive, YouTube, etc.)</label>
+    <input class="inp" id="fu" placeholder="https://drive.google.com/... or https://youtube.com/...">
+    <label class="il">DESCRIPTION</label>
+    <input class="inp" id="fd" placeholder="Brief description...">
+    <label class="il">PROJECT (optional)</label>
+    <input class="inp" id="fp2" placeholder="Project name...">
+    <button class="btn btn-gold" onclick="addFile()">💾 SAVE FILE</button>
+  </div>
+  <div style="font-size:9px;letter-spacing:3px;color:#00f5ff;margin-bottom:12px" id="files-title">0 FILES SAVED</div>
+  <div id="files-list"></div>
+</div>
+
+<!-- GOOGLE DRIVE -->
+<div class="page" id="page-gdrive">
+  <div style="font-size:9px;letter-spacing:3px;color:#00f5ff;margin-bottom:12px">🔗 GOOGLE DRIVE INTEGRATION</div>
+  <div class="panel" style="border-color:rgba(0,255,136,0.3);background:rgba(0,255,136,0.02)">
+    <div class="pt" style="color:#00ff88">HOW TO CONNECT GOOGLE DRIVE</div>
+    <div style="font-size:12px;color:rgba(168,216,234,0.7);line-height:1.9">
+      <strong style="color:#00ff88">Step 1:</strong> Go to <a href="https://drive.google.com" target="_blank" style="color:#00f5ff">drive.google.com</a><br>
+      <strong style="color:#00ff88">Step 2:</strong> Upload your 3D/CAD/video files<br>
+      <strong style="color:#00ff88">Step 3:</strong> Right-click file → "Share" → "Copy link"<br>
+      <strong style="color:#00ff88">Step 4:</strong> Paste the link in File Manager above<br>
+      <strong style="color:#00ff88">Step 5:</strong> Your files are now in your AR Technologies platform!
+    </div>
+  </div>
+  <div class="gdrive-box" onclick="window.open('https://drive.google.com','_blank')">
+    <div style="font-size:36px;margin-bottom:8px">🔗</div>
+    <div style="font-size:14px;color:#00f5ff;font-weight:700">OPEN GOOGLE DRIVE</div>
+    <div style="font-size:11px;color:rgba(168,216,234,0.5);margin-top:4px">Click to open your Google Drive in new tab</div>
+  </div>
+  <div class="panel">
+    <div class="pt">USEFUL FREE TOOLS FOR CAD & 3D</div>
+    <div style="display:flex;flex-direction:column;gap:8px">
+      <div class="sc" style="display:flex;align-items:center;gap:12px" onclick="window.open('https://www.tinkercad.com','_blank')">
+        <div style="font-size:24px">🧊</div>
+        <div><div style="font-weight:700;font-size:13px;color:#00f5ff">Tinkercad — FREE 3D CAD</div><div style="font-size:11px;color:rgba(168,216,234,0.45)">Browser-based 3D design. No install needed. Export STL/OBJ.</div></div>
+      </div>
+      <div class="sc" style="display:flex;align-items:center;gap:12px" onclick="window.open('https://www.freecad.org','_blank')">
+        <div style="font-size:24px">📐</div>
+        <div><div style="font-weight:700;font-size:13px;color:#00f5ff">FreeCAD — FREE Professional CAD</div><div style="font-size:11px;color:rgba(168,216,234,0.45)">Full professional CAD software. Free forever.</div></div>
+      </div>
+      <div class="sc" style="display:flex;align-items:center;gap:12px" onclick="window.open('https://www.blender.org','_blank')">
+        <div style="font-size:24px">🎨</div>
+        <div><div style="font-weight:700;font-size:13px;color:#ffd700">Blender — FREE 3D/4D Animation</div><div style="font-size:11px;color:rgba(168,216,234,0.45)">Professional 3D modeling, animation and video rendering. Free.</div></div>
+      </div>
+      <div class="sc" style="display:flex;align-items:center;gap:12px" onclick="window.open('https://www.autodesk.com/products/fusion-360/free-trial','_blank')">
+        <div style="font-size:24px">⚙️</div>
+        <div><div style="font-weight:700;font-size:13px;color:#ff6b35">Autodesk Fusion 360 — FREE for Startups</div><div style="font-size:11px;color:rgba(168,216,234,0.45)">Professional CAD/CAM. Free for small businesses under $100k revenue.</div></div>
+      </div>
+      <div class="sc" style="display:flex;align-items:center;gap:12px" onclick="window.open('https://sketchfab.com','_blank')">
+        <div style="font-size:24px">🌐</div>
+        <div><div style="font-weight:700;font-size:13px;color:#b44fff">Sketchfab — 3D Model Library</div><div style="font-size:11px;color:rgba(168,216,234,0.45)">Download & share thousands of free 3D models.</div></div>
+      </div>
+    </div>
   </div>
 </div>
 
 <!-- DEMO -->
 <div class="page" id="page-demo">
-  <div class="dh">
-    <div class="dt">AR TECHNOLOGIES</div>
-    <div class="ds">AI · DESIGN · MANUFACTURING · DEFENCE</div>
-    <div style="font-size:12px;color:rgba(168,216,234,0.6);line-height:1.7">Powered by cutting-edge AI. World-class 2D/3D/4D design,<br>manufacturing solutions and defence technology.</div>
-    <div class="dsg">
-      <div class="dsc"><div class="dsv" id="dmo">0</div><div class="dsl">PROJECTS</div></div>
-      <div class="dsc"><div class="dsv" id="dmc">0</div><div class="dsl">CLIENTS</div></div>
-      <div class="dsc"><div class="dsv">100+</div><div class="dsl">LANGUAGES</div></div>
+  <div class="panel" style="text-align:center;background:linear-gradient(135deg,#010a14,#021428);border-color:rgba(0,245,255,0.2)">
+    <div style="font-size:20px;font-weight:900;color:#00f5ff;text-shadow:0 0 20px #00f5ff;margin-bottom:5px">AR TECHNOLOGIES</div>
+    <div style="font-size:11px;color:rgba(0,245,255,0.5);letter-spacing:3px;margin-bottom:12px">AI · DESIGN · MANUFACTURING · DEFENCE</div>
+    <div style="font-size:12px;color:rgba(168,216,234,0.6);line-height:1.7">AI-powered 2D/3D/4D design, manufacturing solutions and defence technology.</div>
+    <div class="g3" style="margin-top:14px">
+      <div style="border:1px solid rgba(0,245,255,0.15);padding:10px;text-align:center"><div style="font-size:18px;font-weight:900;color:#00f5ff" id="dmo">0</div><div style="font-size:9px;color:rgba(0,245,255,0.4);letter-spacing:2px">PROJECTS</div></div>
+      <div style="border:1px solid rgba(0,245,255,0.15);padding:10px;text-align:center"><div style="font-size:18px;font-weight:900;color:#ffd700" id="dmc">0</div><div style="font-size:9px;color:rgba(0,245,255,0.4);letter-spacing:2px">CLIENTS</div></div>
+      <div style="border:1px solid rgba(0,245,255,0.15);padding:10px;text-align:center"><div style="font-size:18px;font-weight:900;color:#00ff88">100+</div><div style="font-size:9px;color:rgba(0,245,255,0.4);letter-spacing:2px">LANGUAGES</div></div>
     </div>
   </div>
   <div style="font-size:9px;letter-spacing:3px;color:#00f5ff;margin-bottom:12px">🎬 DEMO VIDEOS</div>
@@ -358,13 +405,13 @@ textarea.inp{resize:none}
   </div>
   <div id="ve" style="display:none;margin-bottom:14px"></div>
   <div style="font-size:9px;letter-spacing:3px;color:#00f5ff;margin-bottom:12px">🏆 OUR SERVICES</div>
-  <div class="svc" onclick="ST('v3d',document.querySelectorAll('.tab')[3])"><div class="si">📐</div><div><div class="sn">2D Engineering Design</div><div class="sd">Professional blueprints, schematics and engineering documentation.</div><span class="tag" style="color:#00f5ff;border:1px solid rgba(0,245,255,0.3);background:rgba(0,245,255,0.08)">AI POWERED</span></div></div>
-  <div class="svc" onclick="ST('v3d',document.querySelectorAll('.tab')[3])"><div class="si">🧊</div><div><div class="sn">3D Modeling & Rendering</div><div class="sd">High-quality 3D models, product visualizations and interactive 3D.</div><span class="tag" style="color:#b44fff;border:1px solid rgba(180,79,255,0.3);background:rgba(180,79,255,0.08)">INTERACTIVE</span></div></div>
-  <div class="svc"><div class="si">🌀</div><div><div class="sn">4D Animation</div><div class="sd">Dynamic 4D animations showing time-based changes and assembly sequences.</div><span class="tag" style="color:#ffd700;border:1px solid rgba(255,215,0,0.3);background:rgba(255,215,0,0.08)">ANIMATED</span></div></div>
-  <div class="svc"><div class="si">🏭</div><div><div class="sn">Manufacturing Technology</div><div class="sd">Complete manufacturing solutions, plant design and process optimization.</div><span class="tag" style="color:#ff6b35;border:1px solid rgba(255,107,53,0.3);background:rgba(255,107,53,0.08)">INDUSTRIAL</span></div></div>
-  <div class="svc"><div class="si">🛡️</div><div><div class="sn">Defence Technology</div><div class="sd">Advanced defence system design and government contract solutions.</div><span class="tag" style="color:#ff4444;border:1px solid rgba(255,68,68,0.3);background:rgba(255,68,68,0.08)">CLASSIFIED</span></div></div>
-  <div class="panel" style="margin-top:14px;text-align:center">
-    <div class="pt">📞 CONTACT AR TECHNOLOGIES</div>
+  <div style="border:1px solid rgba(0,245,255,0.15);padding:14px;margin-bottom:10px;display:flex;gap:12px;cursor:pointer" onclick="ST('v3d',document.querySelectorAll('.tab')[3])"><div style="font-size:24px">📐</div><div><div style="font-size:13px;font-weight:700;color:#fff;margin-bottom:3px">2D Engineering Design</div><div style="font-size:12px;color:rgba(168,216,234,0.5)">Professional blueprints and engineering documentation.</div></div></div>
+  <div style="border:1px solid rgba(0,245,255,0.15);padding:14px;margin-bottom:10px;display:flex;gap:12px;cursor:pointer" onclick="ST('v3d',document.querySelectorAll('.tab')[3])"><div style="font-size:24px">🧊</div><div><div style="font-size:13px;font-weight:700;color:#fff;margin-bottom:3px">3D Modeling & Rendering</div><div style="font-size:12px;color:rgba(168,216,234,0.5)">High-quality 3D models and interactive experiences.</div></div></div>
+  <div style="border:1px solid rgba(0,245,255,0.15);padding:14px;margin-bottom:10px;display:flex;gap:12px"><div style="font-size:24px">🌀</div><div><div style="font-size:13px;font-weight:700;color:#fff;margin-bottom:3px">4D Animation</div><div style="font-size:12px;color:rgba(168,216,234,0.5)">Dynamic 4D animations and product assembly sequences.</div></div></div>
+  <div style="border:1px solid rgba(0,245,255,0.15);padding:14px;margin-bottom:10px;display:flex;gap:12px"><div style="font-size:24px">🏭</div><div><div style="font-size:13px;font-weight:700;color:#fff;margin-bottom:3px">Manufacturing Technology</div><div style="font-size:12px;color:rgba(168,216,234,0.5)">Complete manufacturing solutions and plant design.</div></div></div>
+  <div style="border:1px solid rgba(0,245,255,0.15);padding:14px;margin-bottom:10px;display:flex;gap:12px"><div style="font-size:24px">🛡️</div><div><div style="font-size:13px;font-weight:700;color:#fff;margin-bottom:3px">Defence Technology</div><div style="font-size:12px;color:rgba(168,216,234,0.5)">Advanced defence systems and government contracts.</div></div></div>
+  <div class="panel" style="text-align:center;margin-top:14px">
+    <div class="pt">📞 CONTACT</div>
     <div style="font-size:13px;line-height:2;color:rgba(168,216,234,0.7)">CEO: <strong style="color:#ffd700">Amit Ramjibhai Joshi</strong><br>📧 amjoshi1997@gmail.com<br>🌐 <strong style="color:#00f5ff">artechnologys1997.onrender.com</strong></div>
     <button class="btn btn-gold" style="margin-top:12px" onclick="AQ('Generate a professional business proposal for AR Technologies')">🤖 Generate Business Proposal</button>
   </div>
@@ -395,7 +442,7 @@ textarea.inp{resize:none}
     <div class="chat-msgs" id="cm"></div>
     <div class="cib">
       <span class="cp">AR &gt;</span>
-      <input class="ci" id="ci2" placeholder="Type in any language — Hindi, English, Tamil, Arabic..." onkeydown="if(event.key==='Enter')SC()">
+      <input class="ci" id="ci2" placeholder="Type in any language — Hindi, English, Tamil..." onkeydown="if(event.key==='Enter')SC()">
       <button class="btn" onclick="SC()" id="snb">SEND</button>
     </div>
   </div>
@@ -411,10 +458,7 @@ textarea.inp{resize:none}
   <div class="panel" id="rtb"></div>
 </div>
 
-<div id="sb">
-  <span id="ck">--:--:--</span>
-  <span style="color:#ff6b35">🔒 AR TECHNOLOGIES · GROQ AI</span>
-</div>
+<div id="sb"><span id="ck">--:--:--</span><span style="color:#ff6b35">🔒 AR TECHNOLOGIES · GROQ AI · DATA SAVED ✅</span></div>
 <div id="nt"></div>
 
 <!-- TRANSLATE MODAL -->
@@ -422,19 +466,16 @@ textarea.inp{resize:none}
   <div class="mb">
     <div class="mh"><span>⚡ TRANSLATE — 100+ LANGUAGES</span><button class="mc" onclick="CM('tm')">✕</button></div>
     <div style="padding:16px">
-      <label class="il">SOURCE TEXT</label>
-      <textarea class="inp" style="height:85px" id="ts" placeholder="Type in any language..."></textarea>
-      <label class="il">TRANSLATE TO</label>
-      <select class="inp" id="tt2"></select>
+      <label class="il">SOURCE TEXT</label><textarea class="inp" style="height:85px" id="ts" placeholder="Type in any language..."></textarea>
+      <label class="il">TRANSLATE TO</label><select class="inp" id="tt2"></select>
       <div style="display:flex;gap:10px;align-items:center;margin:10px 0">
         <button class="btn" onclick="doTr()" id="trb">⚡ TRANSLATE</button>
         <span id="trs" style="font-size:10px;color:rgba(0,245,255,0.35)">READY</span>
       </div>
-      <label class="il">OUTPUT</label>
-      <textarea class="inp" style="height:85px;color:#00f5ff" id="to2" readonly></textarea>
+      <label class="il">OUTPUT</label><textarea class="inp" style="height:85px;color:#00f5ff" id="to2" readonly></textarea>
       <div style="font-size:9px;letter-spacing:2px;color:rgba(0,245,255,0.35);margin:10px 0 8px">🇮🇳 INDIAN LANGUAGES</div>
       <div class="lc" id="ic"></div>
-      <div style="font-size:9px;letter-spacing:2px;color:rgba(0,245,255,0.35);margin:10px 0 8px">🌍 WORLD LANGUAGES</div>
+      <div style="font-size:9px;letter-spacing:2px;color:rgba(0,245,255,0.35);margin:10px 0 8px">🌍 WORLD</div>
       <div class="lc" id="wc2"></div>
     </div>
   </div>
@@ -443,25 +484,8 @@ textarea.inp{resize:none}
 <script>
 const SYS='You are ARIA — AR Technologies Jarvis AI for CEO Amit Ramjibhai Joshi. AR Technologies specialises in AI-powered 2D design, 3D modeling, 4D animation, manufacturing and defence. Be professional, futuristic and concise. Respond in the same language the user writes in.';
 const LGS=[
-  {n:"Hindi",nat:"हिंदी",f:"🇮🇳",g:"i"},{n:"Gujarati",nat:"ગુજરાતી",f:"🇮🇳",g:"i"},
-  {n:"Tamil",nat:"தமிழ்",f:"🇮🇳",g:"i"},{n:"Telugu",nat:"తెలుగు",f:"🇮🇳",g:"i"},
-  {n:"Marathi",nat:"मराठी",f:"🇮🇳",g:"i"},{n:"Bengali",nat:"বাংলা",f:"🇮🇳",g:"i"},
-  {n:"Punjabi",nat:"ਪੰਜਾਬੀ",f:"🇮🇳",g:"i"},{n:"Kannada",nat:"ಕನ್ನಡ",f:"🇮🇳",g:"i"},
-  {n:"Malayalam",nat:"മലയാളം",f:"🇮🇳",g:"i"},{n:"Odia",nat:"ଓଡ଼ିଆ",f:"🇮🇳",g:"i"},
-  {n:"Urdu",nat:"اردو",f:"🇮🇳",g:"i"},{n:"Assamese",nat:"অসমীয়া",f:"🇮🇳",g:"i"},
-  {n:"Maithili",nat:"मैथिली",f:"🇮🇳",g:"i"},{n:"Sanskrit",nat:"संस्कृत",f:"🇮🇳",g:"i"},
-  {n:"Nepali",nat:"नेपाली",f:"🇮🇳",g:"i"},{n:"Sindhi",nat:"سنڌي",f:"🇮🇳",g:"i"},
-  {n:"Dogri",nat:"डोगरी",f:"🇮🇳",g:"i"},{n:"Konkani",nat:"कोंकणी",f:"🇮🇳",g:"i"},
-  {n:"Manipuri",nat:"মৈতৈলোন্",f:"🇮🇳",g:"i"},{n:"Santali",nat:"ᱥᱟᱱᱛᱟᱲᱤ",f:"🇮🇳",g:"i"},
-  {n:"Kashmiri",nat:"کٲشُر",f:"🇮🇳",g:"i"},{n:"Bodo",nat:"बड़ो",f:"🇮🇳",g:"i"},
-  {n:"English",nat:"English",f:"🇬🇧",g:"w"},{n:"Chinese",nat:"中文",f:"🇨🇳",g:"w"},
-  {n:"Japanese",nat:"日本語",f:"🇯🇵",g:"w"},{n:"Korean",nat:"한국어",f:"🇰🇷",g:"w"},
-  {n:"Arabic",nat:"العربية",f:"🇸🇦",g:"w"},{n:"French",nat:"Français",f:"🇫🇷",g:"w"},
-  {n:"Spanish",nat:"Español",f:"🇪🇸",g:"w"},{n:"German",nat:"Deutsch",f:"🇩🇪",g:"w"},
-  {n:"Russian",nat:"Русский",f:"🇷🇺",g:"w"},{n:"Portuguese",nat:"Português",f:"🇵🇹",g:"w"},
-  {n:"Italian",nat:"Italiano",f:"🇮🇹",g:"w"},{n:"Turkish",nat:"Türkçe",f:"🇹🇷",g:"w"},
-  {n:"Persian",nat:"فارسی",f:"🇮🇷",g:"w"},{n:"Indonesian",nat:"Bahasa Indonesia",f:"🇮🇩",g:"w"},
-  {n:"Thai",nat:"ภาษาไทย",f:"🇹🇭",g:"w"},{n:"Swahili",nat:"Kiswahili",f:"🇰🇪",g:"w"},
+  {n:"Hindi",nat:"हिंदी",f:"🇮🇳",g:"i"},{n:"Gujarati",nat:"ગુજરાતી",f:"🇮🇳",g:"i"},{n:"Tamil",nat:"தமிழ்",f:"🇮🇳",g:"i"},{n:"Telugu",nat:"తెలుగు",f:"🇮🇳",g:"i"},{n:"Marathi",nat:"मराठी",f:"🇮🇳",g:"i"},{n:"Bengali",nat:"বাংলা",f:"🇮🇳",g:"i"},{n:"Punjabi",nat:"ਪੰਜਾਬੀ",f:"🇮🇳",g:"i"},{n:"Kannada",nat:"ಕನ್ನಡ",f:"🇮🇳",g:"i"},{n:"Malayalam",nat:"മലയാളം",f:"🇮🇳",g:"i"},{n:"Odia",nat:"ଓଡ଼ିଆ",f:"🇮🇳",g:"i"},{n:"Urdu",nat:"اردو",f:"🇮🇳",g:"i"},{n:"Assamese",nat:"অসমীয়া",f:"🇮🇳",g:"i"},{n:"Maithili",nat:"मैथिली",f:"🇮🇳",g:"i"},{n:"Sanskrit",nat:"संस्कृत",f:"🇮🇳",g:"i"},{n:"Nepali",nat:"नेपाली",f:"🇮🇳",g:"i"},{n:"Sindhi",nat:"سنڌي",f:"🇮🇳",g:"i"},{n:"Dogri",nat:"डोगरी",f:"🇮🇳",g:"i"},{n:"Konkani",nat:"कोंकणी",f:"🇮🇳",g:"i"},{n:"Manipuri",nat:"মৈতৈলোন্",f:"🇮🇳",g:"i"},{n:"Santali",nat:"ᱥᱟᱱᱛᱟᱲᱤ",f:"🇮🇳",g:"i"},{n:"Kashmiri",nat:"کٲشُر",f:"🇮🇳",g:"i"},{n:"Bodo",nat:"बड़ो",f:"🇮🇳",g:"i"},
+  {n:"English",nat:"English",f:"🇬🇧",g:"w"},{n:"Chinese",nat:"中文",f:"🇨🇳",g:"w"},{n:"Japanese",nat:"日本語",f:"🇯🇵",g:"w"},{n:"Korean",nat:"한국어",f:"🇰🇷",g:"w"},{n:"Arabic",nat:"العربية",f:"🇸🇦",g:"w"},{n:"French",nat:"Français",f:"🇫🇷",g:"w"},{n:"Spanish",nat:"Español",f:"🇪🇸",g:"w"},{n:"German",nat:"Deutsch",f:"🇩🇪",g:"w"},{n:"Russian",nat:"Русский",f:"🇷🇺",g:"w"},{n:"Portuguese",nat:"Português",f:"🇵🇹",g:"w"},{n:"Italian",nat:"Italiano",f:"🇮🇹",g:"w"},{n:"Turkish",nat:"Türkçe",f:"🇹🇷",g:"w"},{n:"Persian",nat:"فارسی",f:"🇮🇷",g:"w"},{n:"Indonesian",nat:"Bahasa Indonesia",f:"🇮🇩",g:"w"},{n:"Thai",nat:"ภาษาไทย",f:"🇹🇭",g:"w"},{n:"Swahili",nat:"Kiswahili",f:"🇰🇪",g:"w"},
 ];
 const TM={
   "2d":{icon:"📐",label:"2D",col:"#00f5ff"},
@@ -470,21 +494,36 @@ const TM={
   "mfg":{icon:"🏭",label:"MFG",col:"#ff6b35"},
   "def":{icon:"🛡️",label:"DEF",col:"#ff4444"},
 };
-let projs=JSON.parse(localStorage.getItem("ar_p")||"[]");
-let clis=JSON.parse(localStorage.getItem("ar_c")||"null")||[
-  {id:"C001",name:"TechCorp Industries",type:"Manufacturing",email:"info@techcorp.com",status:"active",notes:"3D design client"},
-  {id:"C002",name:"InfraVision Ltd",type:"Engineering",email:"contact@infravision.com",status:"active",notes:"2D/3D projects"},
-  {id:"C003",name:"Apex Dynamics",type:"Animation",email:"hello@apex.com",status:"pending",notes:"4D animation pending"},
-  {id:"C004",name:"Ministry of Defence",type:"Defence",email:"mod@gov.in",status:"active",notes:"CLASSIFIED"},
-];
-let CH=[],SPT="2d",ATC=[],sAC=false;
-let TS,TC,TR,TM2,TA=true,TW=false;
+let projs=[],clis=[],files=[],CH=[],SPT="2d",ATC=[],sAC=false;
+let TS2,TC2,TR2,TM3,TA=true,TW=false;
 let curIP="";
-function sv(){localStorage.setItem("ar_p",JSON.stringify(projs));localStorage.setItem("ar_c",JSON.stringify(clis));}
 
-window.onload=function(){
+// ── SERVER API (saves to server permanently) ──────────────
+async function api(path,method="GET",body=null){
+  const opts={method,headers:{"Content-Type":"application/json"}};
+  if(body)opts.body=JSON.stringify(body);
+  const r=await fetch(path,opts);
+  return r.json();
+}
+
+// ── INIT ──────────────────────────────────────────────────
+window.onload=async function(){
   document.getElementById("ps").value=new Date().toISOString().slice(0,10);
-  bLS();uD();rCl();rRv();iC();i3D();
+  bLS();
+  // Load all data from server
+  try{
+    const [pd,cd,fd]=await Promise.all([api("/api/projects"),api("/api/clients"),api("/api/files")]);
+    projs=pd.projects||[];
+    clis=cd.clients||[];
+    if(!clis.length)clis=[
+      {id:"C001",name:"TechCorp Industries",type:"Manufacturing",email:"info@techcorp.com",status:"active",notes:"3D design client"},
+      {id:"C002",name:"InfraVision Ltd",type:"Engineering",email:"contact@infravision.com",status:"active",notes:"2D/3D projects"},
+      {id:"C003",name:"Apex Dynamics",type:"Animation",email:"hello@apex.com",status:"pending",notes:"4D animation pending"},
+      {id:"C004",name:"Ministry of Defence",type:"Defence",email:"mod@gov.in",status:"active",notes:"CLASSIFIED"},
+    ];
+    files=fd.files||[];
+  }catch(e){console.log("Using local data");}
+  uD();rCl();rRv();iC();i3D();loadModels();
   setInterval(()=>document.getElementById("ck").textContent=new Date().toTimeString().slice(0,8),1000);
   document.querySelectorAll(".mo").forEach(m=>m.addEventListener("click",e=>{if(e.target===m)m.classList.remove("open");}));
 };
@@ -497,6 +536,8 @@ function ST(id,te){
   if(id==="projects")rPr();
   if(id==="revenue")rRv();
   if(id==="clients")rCl();
+  if(id==="files")rFiles();
+  if(id==="models")loadModels();
   if(id==="demo"){document.getElementById("dmo").textContent=projs.length;document.getElementById("dmc").textContent=clis.length;}
   if(id==="v3d")rz3D();
 }
@@ -515,30 +556,30 @@ async function cTr(text,from,to){
   return d.translated||"";
 }
 
-// ── 3D ──
+// ── 3D VIEWER ─────────────────────────────────────────────
 function i3D(){
   const cv=document.getElementById("vc");if(!cv||typeof THREE==="undefined")return;
-  TS=new THREE.Scene();TS.background=new THREE.Color(0x000d1a);
-  TC=new THREE.PerspectiveCamera(75,cv.clientWidth/320||1.5,0.1,1000);TC.position.z=3;
-  TR=new THREE.WebGLRenderer({canvas:cv,antialias:true});TR.setSize(cv.clientWidth||300,300);
-  TS.add(new THREE.AmbientLight(0x00f5ff,0.4));
-  const d=new THREE.DirectionalLight(0xffffff,0.8);d.position.set(5,5,5);TS.add(d);
-  const p2=new THREE.PointLight(0x00f5ff,1,100);p2.position.set(-5,-5,5);TS.add(p2);
-  const g=new THREE.GridHelper(10,10,0x00f5ff,0x001a2e);g.position.y=-1.5;TS.add(g);
+  TS2=new THREE.Scene();TS2.background=new THREE.Color(0x000d1a);
+  TC2=new THREE.PerspectiveCamera(75,cv.clientWidth/300||1.5,0.1,1000);TC2.position.z=3;
+  TR2=new THREE.WebGLRenderer({canvas:cv,antialias:true});TR2.setSize(cv.clientWidth||300,300);
+  TS2.add(new THREE.AmbientLight(0x00f5ff,0.4));
+  const d=new THREE.DirectionalLight(0xffffff,0.8);d.position.set(5,5,5);TS2.add(d);
+  const p2=new THREE.PointLight(0x00f5ff,1,100);p2.position.set(-5,-5,5);TS2.add(p2);
+  const g=new THREE.GridHelper(10,10,0x00f5ff,0x001a2e);g.position.y=-1.5;TS2.add(g);
   crM("cube");
   let iD=false,pX=0,pY=0;
   cv.addEventListener("mousedown",e=>{iD=true;pX=e.clientX;pY=e.clientY;});
   cv.addEventListener("touchstart",e=>{iD=true;pX=e.touches[0].clientX;pY=e.touches[0].clientY;});
   window.addEventListener("mouseup",()=>iD=false);window.addEventListener("touchend",()=>iD=false);
-  cv.addEventListener("mousemove",e=>{if(!iD||!TM2)return;TM2.rotation.y+=(e.clientX-pX)*0.01;TM2.rotation.x+=(e.clientY-pY)*0.01;pX=e.clientX;pY=e.clientY;});
-  cv.addEventListener("touchmove",e=>{if(!iD||!TM2)return;TM2.rotation.y+=(e.touches[0].clientX-pX)*0.01;TM2.rotation.x+=(e.touches[0].clientY-pY)*0.01;pX=e.touches[0].clientX;pY=e.touches[0].clientY;});
-  cv.addEventListener("wheel",e=>{TC.position.z+=e.deltaY*0.005;});
+  cv.addEventListener("mousemove",e=>{if(!iD||!TM3)return;TM3.rotation.y+=(e.clientX-pX)*0.01;TM3.rotation.x+=(e.clientY-pY)*0.01;pX=e.clientX;pY=e.clientY;});
+  cv.addEventListener("touchmove",e=>{if(!iD||!TM3)return;TM3.rotation.y+=(e.touches[0].clientX-pX)*0.01;TM3.rotation.x+=(e.touches[0].clientY-pY)*0.01;pX=e.touches[0].clientX;pY=e.touches[0].clientY;});
+  cv.addEventListener("wheel",e=>{TC2.position.z+=e.deltaY*0.005;});
   an3D();
 }
-const COLS=["#00f5ff","#b44fff","#ffd700","#ff6b35","#00ff88","#ff4444","#ffffff"];
+const COLS=["#00f5ff","#b44fff","#ffd700","#ff6b35","#00ff88","#ff4444","#fff"];
 let ci3=0;
 function crM(t){
-  if(TM2)TS.remove(TM2);
+  if(TM3)TS2.remove(TM3);
   let g;
   switch(t){
     case"sphere":g=new THREE.SphereGeometry(1,32,32);break;
@@ -551,70 +592,147 @@ function crM(t){
     default:g=new THREE.BoxGeometry(1.5,1.5,1.5);
   }
   const m=new THREE.MeshPhongMaterial({color:new THREE.Color(COLS[ci3]),emissive:new THREE.Color(COLS[ci3]).multiplyScalar(0.1),shininess:100,wireframe:TW});
-  TM2=new THREE.Mesh(g,m);TS.add(TM2);
-  const inf={cube:"Cube | V:8 | F:6 | Metal",sphere:"Sphere | V:1056 | F:1024 | Polished",cylinder:"Cylinder | V:66 | Industrial Steel",cone:"Cone | V:34 | Composite",torus:"Torus | V:1700 | Titanium",engine:"Engine Block | 8-Cyl | Aluminium Alloy",building:"Building | 5 Floors | Concrete+Glass",rocket:"Rocket | H:25m | Carbon Fibre"};
-  document.getElementById("mi").innerHTML=`📐 ${inf[t]||inf.cube}<br>🖱️ Drag to rotate | Scroll to zoom | Auto-rotating`;
+  TM3=new THREE.Mesh(g,m);TS2.add(TM3);
+  const inf={cube:"Cube | V:8 | F:6 | Metal",sphere:"Sphere | Polished",cylinder:"Cylinder | Industrial Steel",cone:"Cone | Composite",torus:"Torus | Titanium",engine:"Engine Block | Aluminium Alloy",building:"Building | Concrete+Glass",rocket:"Rocket | Carbon Fibre"};
+  document.getElementById("mi").innerHTML=`📐 ${inf[t]||"Model loaded"}<br>🖱️ Drag to rotate | Scroll to zoom | Auto-rotating`;
 }
 function l3d(t,b){document.querySelectorAll(".mb3").forEach(x=>x.classList.remove("ma2"));if(b)b.classList.add("ma2");crM(t);}
-function twf(){TW=!TW;if(TM2)TM2.material.wireframe=TW;nt2(TW?"📐 Wireframe ON":"📐 Wireframe OFF");}
+function twf(){TW=!TW;if(TM3)TM3.material.wireframe=TW;nt2(TW?"📐 Wireframe ON":"📐 Wireframe OFF");}
 function tan(){TA=!TA;nt2(TA?"▶️ Animate ON":"⏸ Paused");}
-function tco(){ci3=(ci3+1)%COLS.length;if(TM2){TM2.material.color=new THREE.Color(COLS[ci3]);TM2.material.emissive=new THREE.Color(COLS[ci3]).multiplyScalar(0.1);}}
-function exv(){if(!TM2)return;TM2.scale.set(1.5,1.5,1.5);setTimeout(()=>{if(TM2)TM2.scale.set(1,1,1);},1000);nt2("💥 Explode view!");}
-function rvw(){if(TM2){TM2.rotation.set(0,0,0);TM2.scale.set(1,1,1);}TC.position.set(0,0,3);TW=false;if(TM2)TM2.material.wireframe=false;}
-function an3D(){requestAnimationFrame(an3D);if(TA&&TM2){TM2.rotation.y+=0.005;TM2.rotation.x+=0.002;}if(TR)TR.render(TS,TC);}
-function rz3D(){const cv=document.getElementById("vc");if(!cv||!TR||!TC)return;TR.setSize(cv.clientWidth||300,300);TC.aspect=(cv.clientWidth||300)/300;TC.updateProjectionMatrix();}
-function osk(id){const d=document.getElementById("ske");d.style.display="block";d.innerHTML=`<iframe title="3D" width="100%" height="280" src="https://sketchfab.com/models/${id}/embed?autostart=1&ui_theme=dark" frameborder="0" allowfullscreen></iframe>`;nt2("🧊 3D model loading...");}
+function tco(){ci3=(ci3+1)%COLS.length;if(TM3){TM3.material.color=new THREE.Color(COLS[ci3]);TM3.material.emissive=new THREE.Color(COLS[ci3]).multiplyScalar(0.1);}}
+function exv(){if(!TM3)return;TM3.scale.set(1.5,1.5,1.5);setTimeout(()=>{if(TM3)TM3.scale.set(1,1,1);},1000);nt2("💥 Explode view!");}
+function rvw(){if(TM3){TM3.rotation.set(0,0,0);TM3.scale.set(1,1,1);}TC2.position.set(0,0,3);TW=false;if(TM3)TM3.material.wireframe=false;}
+function an3D(){requestAnimationFrame(an3D);if(TA&&TM3){TM3.rotation.y+=0.005;TM3.rotation.x+=0.002;}if(TR2)TR2.render(TS2,TC2);}
+function rz3D(){const cv=document.getElementById("vc");if(!cv||!TR2||!TC2)return;TR2.setSize(cv.clientWidth||300,300);TC2.aspect=(cv.clientWidth||300)/300;TC2.updateProjectionMatrix();}
 async function ai3d(){
-  const p=document.getElementById("3dp").value.trim();if(!p){nt2("⚠️ Describe your 3D project first!","#ff6b35");return;}
+  const p=document.getElementById("3dp").value.trim();if(!p){nt2("⚠️ Describe your 3D project!","#ff6b35");return;}
   const b=document.getElementById("a3b"),o=document.getElementById("a3o");
   b.disabled=true;b.innerHTML='<span class="sp2"><span class="s"></span><span class="s"></span><span class="s"></span></span>';o.style.display="none";
-  try{const r=await cAI([{role:"user",content:`As expert 3D designer for AR Technologies, analyze this project and provide: 1)Technical specs 2)Dimensions 3)Materials 4)Manufacturing process 5)Cost in INR 6)CAD software recommendation\n\nProject: ${p}`}],SYS);o.style.display="block";o.innerHTML=r.replace(/\n/g,"<br>");}
+  try{const r=await cAI([{role:"user",content:`As expert 3D designer for AR Technologies, analyze this and provide: Technical specs, Dimensions, Materials, Manufacturing process, Cost in INR, CAD software recommendation.\n\nProject: ${p}`}],SYS);o.style.display="block";o.innerHTML=r.replace(/\n/g,"<br>");}
   catch(e){o.style.display="block";o.innerHTML="❌ "+e.message;}
   b.disabled=false;b.innerHTML="🤖 ANALYZE & GENERATE SPECS";
 }
 
-// ── IMAGE GENERATOR ──
+// ── 3D MODEL DOWNLOADS ────────────────────────────────────
+async function loadModels(){
+  const grid=document.getElementById("models-grid");
+  if(!grid)return;
+  grid.innerHTML='<div style="text-align:center;padding:20px;color:rgba(0,245,255,0.4)"><span class="sp2"><span class="s"></span><span class="s"></span><span class="s"></span></span> Loading models...</div>';
+  try{
+    const d=await api("/api/models3d");
+    const models=d.models||[];
+    grid.innerHTML=models.map(m=>`
+      <div class="model-card" style="margin-bottom:12px">
+        <div style="display:flex;align-items:center;gap:12px;margin-bottom:10px">
+          <div style="font-size:32px">${m.preview}</div>
+          <div style="flex:1">
+            <div style="font-size:14px;font-weight:700;color:#fff;margin-bottom:2px">${m.name}</div>
+            <div style="font-size:10px;color:rgba(0,245,255,0.4);letter-spacing:2px">${m.category} · ${m.format} · ${m.size}</div>
+          </div>
+        </div>
+        <div style="display:flex;gap:7px;flex-wrap:wrap">
+          <a href="${m.url}" target="_blank" class="btn btn-green" style="text-decoration:none;font-size:8px">⬇️ DOWNLOAD ${m.format}</a>
+          <button class="btn btn-pu" style="font-size:8px" onclick="viewSketchfab('${m.sketchfab}','${m.name}')">🧊 VIEW 3D</button>
+          <button class="btn" style="font-size:8px" onclick="saveModelToFiles('${m.name}','${m.url}','${m.category}')">💾 SAVE TO FILES</button>
+        </div>
+      </div>`).join("");
+  }catch(e){grid.innerHTML='<div style="padding:20px;color:#ff4444">Failed to load models. Please refresh.</div>';}
+}
+function viewSketchfab(id,name){
+  const d=document.createElement("div");
+  d.style.cssText="position:fixed;inset:0;z-index:999;background:rgba(1,10,20,0.95);display:flex;align-items:center;justify-content:center;flex-direction:column;padding:16px";
+  d.innerHTML=`<div style="width:100%;max-width:700px"><div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:10px"><div style="color:#00f5ff;font-size:13px;font-weight:700">${name}</div><button onclick="this.closest('div[style]').remove()" style="background:none;border:1px solid #ff4444;color:#ff4444;padding:5px 10px;cursor:pointer;font-size:12px">✕ CLOSE</button></div><iframe title="${name}" width="100%" height="450" src="https://sketchfab.com/models/${id}/embed?autostart=1&ui_theme=dark" frameborder="0" allowfullscreen></iframe></div>`;
+  document.body.appendChild(d);
+}
+function saveModelToFiles(name,url,cat){
+  saveFileToServer({name:`${name}.obj`,type:"🧊",url,desc:`${cat} 3D model`,project:""});
+}
+
+// ── IMAGE GENERATOR ───────────────────────────────────────
 function genImg(){
-  const p=document.getElementById("ip").value.trim();if(!p){nt2("⚠️ Describe your design first!","#ff6b35");return;}
-  const st=document.getElementById("is").value,fm=document.getElementById("if2").value;
+  const p=document.getElementById("ip").value.trim();if(!p){nt2("⚠️ Describe your design!","#ff6b35");return;}
+  const st=document.getElementById("is2").value,fm=document.getElementById("if2").value;
   curIP=`${p}, ${st}, professional, high quality, detailed`;doGI(curIP,fm);
 }
-function qGen(p){document.getElementById("ip").value=p;ST("img",document.querySelectorAll(".tab")[4]);curIP=p+", professional, high quality";doGI(curIP,"landscape");}
+function qGen(p){document.getElementById("ip").value=p;ST("img",document.querySelectorAll(".tab")[5]);curIP=p+", professional high quality";doGI(curIP,"landscape");}
 function doGI(p,fm){
   const w=fm==="portrait"?512:1024,h=fm==="portrait"?1024:fm==="square"?512:768;
-  const b=document.getElementById("gib"),ld=document.getElementById("il3"),rs=document.getElementById("iR"),ia=document.getElementById("ia"),gi=document.getElementById("gi");
+  const b=document.getElementById("gib"),ld=document.getElementById("il3"),rs=document.getElementById("iR"),gi=document.getElementById("gi");
   b.disabled=true;ld.style.display="flex";rs.style.display="none";
   const url=`https://image.pollinations.ai/prompt/${encodeURIComponent(p+" AR Technologies")}?width=${w}&height=${h}&nologo=true&seed=${Math.floor(Math.random()*9999)}`;
-  gi.onload=()=>{ld.style.display="none";rs.style.display="block";document.getElementById("ic2").textContent=`🎨 ${p.slice(0,60)}...`;ia.style.display="flex";b.disabled=false;nt2("✅ Image generated!");};
+  gi.onload=()=>{ld.style.display="none";rs.style.display="block";document.getElementById("ic2").textContent=`🎨 ${p.slice(0,60)}...`;b.disabled=false;nt2("✅ Image generated!");};
   gi.onerror=()=>{ld.style.display="none";b.disabled=false;nt2("❌ Failed. Try again.","#ff4444");};
   gi.src=url;
 }
 function genVar(){if(!curIP)return;doGI(curIP+" variation","landscape");}
 function dlImg(){const gi=document.getElementById("gi");if(!gi.src)return;const a=document.createElement("a");a.href=gi.src;a.download="AR-Design.jpg";a.click();nt2("⬇️ Downloading...");}
+function saveImgToFiles(){
+  const gi=document.getElementById("gi");if(!gi.src){nt2("⚠️ Generate image first!","#ff6b35");return;}
+  saveFileToServer({name:"AI-Design-"+Date.now()+".jpg",type:"🎨",url:gi.src,desc:"AI generated design image",project:""});
+}
 
-// ── BLUEPRINT ──
+// ── BLUEPRINT ─────────────────────────────────────────────
 async function genBP(){
-  const t=document.getElementById("bt").value,d=document.getElementById("bd").value.trim(),dm=document.getElementById("bdm").value,mt=document.getElementById("bmt").value;
-  if(!d){nt2("⚠️ Enter description!","#ff6b35");return;}
-  const b=document.getElementById("bpb"),o=document.getElementById("bpo"),a=document.getElementById("bpa");
+  const t=document.getElementById("bt").value,d=document.getElementById("bd").value.trim();if(!d){nt2("⚠️ Enter description!","#ff6b35");return;}
+  const b=document.getElementById("bpb"),o=document.getElementById("bpo");
   b.disabled=true;b.innerHTML='<span class="sp2"><span class="s"></span><span class="s"></span><span class="s"></span></span>';o.style.display="none";
   try{
-    const r=await cAI([{role:"user",content:`You are a professional engineer for AR Technologies. Generate a detailed technical blueprint for:\nType: ${t}\nDescription: ${d}\nDimensions: ${dm||"TBD"}\nMaterial: ${mt||"TBD"}\n\nInclude: 1.PROJECT OVERVIEW 2.TECHNICAL SPECIFICATIONS 3.DIMENSIONS & MEASUREMENTS 4.MATERIAL SPECS 5.ASSEMBLY INSTRUCTIONS 6.QUALITY STANDARDS 7.COST ESTIMATE (INR) 8.TIMELINE 9.SAFETY NOTES`}],SYS);
-    o.style.display="block";o.textContent=r;a.style.display="flex";nt2("✅ Blueprint generated!");
+    const r=await cAI([{role:"user",content:`You are a professional engineer for AR Technologies. Generate a detailed technical blueprint for:\nType: ${t}\nDescription: ${d}\nDimensions: ${document.getElementById("bdm").value||"TBD"}\nMaterial: ${document.getElementById("bmt").value||"TBD"}\n\nInclude: 1.PROJECT OVERVIEW 2.TECHNICAL SPECIFICATIONS 3.DIMENSIONS 4.MATERIAL SPECS 5.ASSEMBLY INSTRUCTIONS 6.QUALITY STANDARDS 7.COST ESTIMATE (INR) 8.TIMELINE 9.SAFETY NOTES`}],SYS);
+    o.style.display="block";o.textContent=r;nt2("✅ Blueprint generated!");
   }catch(e){o.style.display="block";o.textContent="❌ Error: "+e.message;}
   b.disabled=false;b.innerHTML="📐 GENERATE BLUEPRINT";
 }
 function ldBPT(n){
-  const t={"Industrial Engine":{t:"3D CAD Specifications",d:"Heavy-duty 8-cylinder industrial diesel engine for manufacturing plant.",dm:"800mm x 600mm x 700mm",mt:"Aluminium alloy, Steel, Cast iron"},"Defence Radar System":{t:"Defence System Design",d:"Advanced phased array radar system for border surveillance.",dm:"12m diameter array",mt:"Carbon fibre, Titanium, Copper"},"Manufacturing Plant":{t:"Manufacturing Process Plan",d:"Complete automotive parts manufacturing plant with 5 production lines.",dm:"200m x 150m x 12m",mt:"Reinforced concrete, Steel"},"Smart Building":{t:"Architectural Layout",d:"10-floor smart office building with IoT systems and solar panels.",dm:"40m x 30m x 45m",mt:"Glass, Steel, Concrete"}}[n];
+  const t={"Industrial Engine":{t:"3D CAD Specifications",d:"Heavy-duty 8-cylinder industrial diesel engine.",dm:"800mm x 600mm x 700mm",mt:"Aluminium alloy, Steel"},"Defence Radar":{t:"Defence System Design",d:"Advanced phased array radar system for border surveillance.",dm:"12m diameter array",mt:"Carbon fibre, Titanium"},"Manufacturing Plant":{t:"Manufacturing Process Plan",d:"Complete automotive parts manufacturing plant with 5 production lines.",dm:"200m x 150m x 12m",mt:"Reinforced concrete, Steel"},"Smart Building":{t:"Architectural Layout",d:"10-floor smart office building with IoT and solar panels.",dm:"40m x 30m x 45m",mt:"Glass, Steel, Concrete"}}[n];
   if(!t)return;
   document.getElementById("bt").value=t.t;document.getElementById("bd").value=t.d;document.getElementById("bdm").value=t.dm;document.getElementById("bmt").value=t.mt;
-  nt2("📋 Template loaded! Tap Generate Blueprint.");
+  nt2("📋 Template loaded!");
 }
 function cpBP(){navigator.clipboard.writeText(document.getElementById("bpo").textContent).catch(()=>{});nt2("📋 Copied!");}
-function expBP(){const t=document.getElementById("bpo").textContent;const a=document.createElement("a");a.href=URL.createObjectURL(new Blob([t],{type:"text/plain"}));a.download="AR-Blueprint.txt";a.click();nt2("📄 Exported!");}
-async function bpToAI(){const t=document.getElementById("bpo").textContent;if(!t)return;CH.push({role:"user",content:"Analyze this blueprint:\n\n"+t.slice(0,500)});ST("ai",document.querySelectorAll(".tab")[8]);rC();await sCAI();}
+function expBP(){const txt=document.getElementById("bpo").textContent;if(!txt)return;const a=document.createElement("a");a.href=URL.createObjectURL(new Blob([txt],{type:"text/plain"}));a.download="AR-Blueprint.txt";a.click();nt2("📄 Exported!");}
+function saveBPToFiles(){const txt=document.getElementById("bpo").textContent;if(!txt){nt2("⚠️ Generate blueprint first!","#ff6b35");return;}const b64=btoa(unescape(encodeURIComponent(txt)));saveFileToServer({name:"Blueprint-"+Date.now()+".txt",type:"📐",url:"data:text/plain;base64,"+b64,desc:"AI generated blueprint",project:""});}
 
-// ── DEMO VIDEOS ──
+// ── FILE MANAGER ──────────────────────────────────────────
+async function saveFileToServer(fileData){
+  try{
+    await api("/api/files","POST",fileData);
+    const d=await api("/api/files");files=d.files||[];
+    rFiles();uD();nt2("💾 File saved to server permanently!");
+  }catch(e){nt2("❌ Save failed: "+e.message,"#ff4444");}
+}
+async function addFile(){
+  const n=document.getElementById("fn").value.trim();if(!n){nt2("⚠️ Enter file name!","#ff6b35");return;}
+  await saveFileToServer({name:n,type:document.getElementById("ft").value,url:document.getElementById("fu").value,desc:document.getElementById("fd").value,project:document.getElementById("fp2").value});
+  ["fn","fu","fd","fp2"].forEach(id=>document.getElementById(id).value="");
+}
+async function rmFile(id){
+  if(!confirm("Remove file?"))return;
+  await api("/api/files/"+id,"DELETE");
+  const d=await api("/api/files");files=d.files||[];rFiles();uD();nt2("🗑 Removed.","#ff4444");
+}
+function rFiles(){
+  const t=document.getElementById("files-title");
+  const list=document.getElementById("files-list");
+  if(!t||!list)return;
+  t.textContent=files.length+" FILES SAVED";
+  if(!files.length){list.innerHTML='<div style="text-align:center;padding:30px;color:rgba(0,245,255,0.2);border:1px dashed rgba(0,245,255,0.1);font-size:11px">NO FILES YET — ADD FILES ABOVE OR SAVE FROM AI TOOLS</div>';return;}
+  list.innerHTML=files.map(f=>`
+    <div class="file-card">
+      <div class="file-icon">${f.type||"📄"}</div>
+      <div style="flex:1">
+        <div class="file-name">${f.name}</div>
+        <div class="file-meta">${f.desc||""} ${f.project?"· Project: "+f.project:""}</div>
+        <div class="file-meta">${new Date(f.uploaded).toLocaleDateString()}</div>
+      </div>
+      <div style="display:flex;gap:6px;flex-direction:column">
+        ${f.url?`<a href="${f.url}" target="_blank" class="btn btn-green" style="text-decoration:none;font-size:8px;padding:4px 9px">🔗 OPEN</a>`:""}
+        ${f.url&&!f.url.startsWith("data:")?`<a href="${f.url}" download class="btn" style="text-decoration:none;font-size:8px;padding:4px 9px">⬇️ DL</a>`:""}
+        <button class="btn btn-red" style="font-size:8px;padding:4px 9px" onclick="rmFile('${f.id}')">🗑</button>
+      </div>
+    </div>`).join("");
+}
+
+// ── DEMO VIDEOS ───────────────────────────────────────────
 function pdv(t){
   const d=document.getElementById("ve");
   const vs={"2d":"https://www.youtube.com/embed/3mnpYHiCRsQ?autoplay=1","3d":"https://www.youtube.com/embed/vqMJz-RMKLI?autoplay=1","4d":"https://www.youtube.com/embed/c0KYU2j0TM4?autoplay=1","def":"https://www.youtube.com/embed/iBfwBgpSzlE?autoplay=1"};
@@ -623,13 +741,14 @@ function pdv(t){
   d.scrollIntoView({behavior:"smooth"});
 }
 
-// ── DASHBOARD ──
+// ── DASHBOARD ─────────────────────────────────────────────
 function uD(){
   const tot=projs.reduce((s,p)=>s+(p.budget||0),0);
-  document.getElementById("dp").textContent=projs.length;
-  document.getElementById("dc").textContent=clis.length;
-  document.getElementById("dr").textContent="₹"+tot.toLocaleString();
-  const dp=document.getElementById("dpr");
+  if(document.getElementById("dp"))document.getElementById("dp").textContent=projs.length;
+  if(document.getElementById("dc"))document.getElementById("dc").textContent=clis.length;
+  if(document.getElementById("dr"))document.getElementById("dr").textContent="₹"+tot.toLocaleString();
+  if(document.getElementById("dfl"))document.getElementById("dfl").textContent=files.length;
+  const dp=document.getElementById("dpr");if(!dp)return;
   if(!projs.length){dp.innerHTML='<div style="text-align:center;padding:28px;color:rgba(0,245,255,0.2);border:1px dashed rgba(0,245,255,0.1);font-size:11px">NO PROJECTS YET — TAP ➕ NEW</div>';return;}
   dp.innerHTML=projs.slice(0,3).map(p=>{
     const t=TM[p.type]||TM["2d"];const done=(p.tasks||[]).filter(x=>x.done).length;const pr=p.tasks?.length?Math.round(done/p.tasks.length*100):0;
@@ -637,7 +756,7 @@ function uD(){
   }).join("");
 }
 
-// ── PROJECTS ──
+// ── PROJECTS ──────────────────────────────────────────────
 function rPr(){
   document.getElementById("pct").textContent=projs.length+" PROJECTS";
   const c=document.getElementById("pl");
@@ -660,15 +779,15 @@ function rPr(){
         <button class="btn" style="flex:1;font-size:8px" onclick="oPrj('${p.id}')">📂 OPEN</button>
         <button class="btn btn-pu" style="font-size:8px" onclick="g3P('${p.id}')">🧊 3D</button>
         <button class="btn btn-gold" style="font-size:8px" onclick="gBP2('${p.id}')">📐 BP</button>
-        <button class="btn" style="font-size:8px;border-color:#ffd700;color:#ffd700" onclick="gIM('${p.id}')">🎨 IMG</button>
+        <button class="btn btn-or" style="font-size:8px" onclick="gIM('${p.id}')">🎨 IMG</button>
         <button class="btn btn-red" style="font-size:8px" onclick="dPr('${p.id}')">🗑</button>
       </div>
     </div>`;
   }).join("");
 }
-function g3P(id){const p=projs.find(x=>x.id===id);if(!p)return;ST("v3d",document.querySelectorAll(".tab")[3]);document.getElementById("3dp").value=p.name+" - "+p.type+" project";nt2("🧊 3D view for "+p.name);}
-function gBP2(id){const p=projs.find(x=>x.id===id);if(!p)return;ST("bp",document.querySelectorAll(".tab")[5]);document.getElementById("bd").value=p.name+"\nClient: "+p.client+"\n"+(p.desc||"");nt2("📐 Blueprint ready for "+p.name);}
-function gIM(id){const p=projs.find(x=>x.id===id);if(!p)return;ST("img",document.querySelectorAll(".tab")[4]);document.getElementById("ip").value=p.name+" "+p.type+" design visualization";nt2("🎨 Generating image for "+p.name);}
+function g3P(id){const p=projs.find(x=>x.id===id);if(!p)return;ST("v3d",document.querySelectorAll(".tab")[3]);document.getElementById("3dp").value=p.name+" - "+p.type+" project";}
+function gBP2(id){const p=projs.find(x=>x.id===id);if(!p)return;ST("bp",document.querySelectorAll(".tab")[6]);document.getElementById("bd").value=p.name+"\nClient: "+p.client+"\n"+(p.desc||"");}
+function gIM(id){const p=projs.find(x=>x.id===id);if(!p)return;ST("img",document.querySelectorAll(".tab")[5]);document.getElementById("ip").value=p.name+" "+p.type+" design visualization";}
 function oPrj(id){
   const p=projs.find(x=>x.id===id);if(!p)return;
   const t=TM[p.type]||TM["2d"];const done=(p.tasks||[]).filter(x=>x.done).length;const pr=p.tasks?.length?Math.round(done/p.tasks.length*100):0;
@@ -681,7 +800,7 @@ function oPrj(id){
       <button class="btn btn-gold" onclick="gBP2('${id}')">📐 BLUEPRINT</button>
       <button class="btn btn-or" onclick="gIM('${id}')">🎨 AI IMAGE</button>
       <button class="btn btn-green" onclick="mD('${id}')">✅ COMPLETE</button>
-      <button class="btn btn-red" onclick="dPr('${id}');ST('projects',document.querySelectorAll('.tab')[1])">🗑</button>
+      <button class="btn btn-red" onclick="dPr('${id}');ST('projects',document.querySelectorAll('.tab')[1])">🗑 DELETE</button>
     </div>
     <div class="panel" style="margin-bottom:12px">
       <div class="pt">PROJECT INFO</div>
@@ -698,13 +817,34 @@ function oPrj(id){
     </div>`;
   ST("detail",null);document.querySelectorAll(".tab").forEach(t=>t.classList.remove("active"));
 }
-function tT(pId,i){const p=projs.find(x=>x.id===pId);if(!p)return;p.tasks[i].done=!p.tasks[i].done;sv();oPrj(pId);}
-function aT(pId){const inp=document.getElementById("nt3-"+pId);const txt=inp.value.trim();if(!txt)return;const p=projs.find(x=>x.id===pId);if(!p)return;p.tasks.push({id:Date.now(),text:txt,done:false,days:3});sv();inp.value="";oPrj(pId);}
-function mD(id){const p=projs.find(x=>x.id===id);if(!p)return;p.status="complete";p.tasks=(p.tasks||[]).map(t=>({...t,done:true}));sv();nt2("✅ Complete!");oPrj(id);}
-function dPr(id){if(!confirm("Delete?"))return;projs=projs.filter(p=>p.id!==id);sv();rPr();uD();nt2("🗑 Deleted.","#ff4444");}
-async function aHP(id){const p=projs.find(x=>x.id===id);if(!p)return;CH.push({role:"user",content:`Give advice for project: "${p.name}" (${p.type}) client: ${p.client}. Desc: ${p.desc}`});ST("ai",document.querySelectorAll(".tab")[8]);rC();await sCAI();}
+async function tT(pId,i){
+  const p=projs.find(x=>x.id===pId);if(!p)return;
+  p.tasks[i].done=!p.tasks[i].done;
+  await api("/api/projects/"+pId,"PUT",p);oPrj(pId);
+}
+async function aT(pId){
+  const inp=document.getElementById("nt3-"+pId);const txt=inp.value.trim();if(!txt)return;
+  const p=projs.find(x=>x.id===pId);if(!p)return;
+  p.tasks.push({id:Date.now(),text:txt,done:false,days:3});
+  await api("/api/projects/"+pId,"PUT",p);inp.value="";oPrj(pId);
+}
+async function mD(id){
+  const p=projs.find(x=>x.id===id);if(!p)return;
+  p.status="complete";p.tasks=(p.tasks||[]).map(t=>({...t,done:true}));
+  await api("/api/projects/"+id,"PUT",p);nt2("✅ Complete!");oPrj(id);
+}
+async function dPr(id){
+  if(!confirm("Delete?"))return;
+  await api("/api/projects/"+id,"DELETE");
+  projs=projs.filter(p=>p.id!==id);rPr();uD();nt2("🗑 Deleted.","#ff4444");
+}
+async function aHP(id){
+  const p=projs.find(x=>x.id===id);if(!p)return;
+  CH.push({role:"user",content:`Give advice for project: "${p.name}" (${p.type}) client: ${p.client}. Desc: ${p.desc}`});
+  ST("ai",document.querySelectorAll(".tab")[11]);rC();await sCAI();
+}
 
-// ── CREATE ──
+// ── CREATE PROJECT ─────────────────────────────────────────
 function selT(el){document.querySelectorAll(".to").forEach(o=>o.classList.remove("sel"));el.classList.add("sel");SPT=el.dataset.type;}
 async function aiSug(){
   const n=document.getElementById("pn2").value.trim(),d=document.getElementById("pd2").value.trim();
@@ -719,37 +859,45 @@ async function aiSug(){
   }catch(e){ATC=[{task:"Kickoff",days:2},{task:"Design",days:5},{task:"Development",days:10},{task:"Review",days:3},{task:"Delivery",days:2}];document.getElementById("aih").innerHTML='<span style="color:#00ff88">✅ Default tasks added.</span>';}
   b.disabled=false;
 }
-function crPrj(){
+async function crPrj(){
   const n=document.getElementById("pn2").value.trim();if(!n){nt2("⚠️ Enter project name!","#ff6b35");return;}
   const p={id:"PRJ-"+String(projs.length+1).padStart(4,"0"),name:n,type:SPT,desc:document.getElementById("pd2").value,client:document.getElementById("pcl").value||"No client",budget:parseInt(document.getElementById("pb3").value)||0,start:document.getElementById("ps").value,deadline:document.getElementById("pdl").value,status:"active",created:new Date().toISOString(),tasks:ATC.length?ATC.map((t,i)=>({id:i,text:t.task,done:false,days:t.days})):[{id:0,text:"Kickoff",done:false,days:2},{id:1,text:"Design",done:false,days:5},{id:2,text:"Development",done:false,days:10},{id:3,text:"Delivery",done:false,days:2}]};
-  projs.unshift(p);sv();ATC=[];
+  await api("/api/projects","POST",p);
+  projs.unshift(p);ATC=[];
   ["pn2","pd2","pcl","pb3","pdl"].forEach(id=>document.getElementById(id).value="");
   document.getElementById("aih").textContent="Fill in details then tap AI Suggest Tasks!";
   document.getElementById("ait").innerHTML="";
-  nt2(`✅ "${p.name}" created!`);ST("projects",document.querySelectorAll(".tab")[1]);
+  uD();nt2(`✅ "${p.name}" created & saved to server!`);
+  ST("projects",document.querySelectorAll(".tab")[1]);
 }
 
-// ── CLIENTS ──
+// ── CLIENTS ───────────────────────────────────────────────
 function rCl(){
   const sc={active:"#00ff88",pending:"orange",classified:"#ff6b35"};
-  document.getElementById("cl2").innerHTML=clis.map(c=>`<div class="panel"><div style="font-size:14px;font-weight:700;color:#fff;margin-bottom:3px">${c.name}</div><div style="font-size:10px;color:rgba(0,245,255,0.35);letter-spacing:2px;margin-bottom:8px">${c.type?.toUpperCase()}</div><span class="tag" style="color:${sc[c.status]||"orange"};border:1px solid ${sc[c.status]||"orange"}44;background:${sc[c.status]||"orange"}12">${c.status?.toUpperCase()}</span><div style="font-size:11px;color:rgba(168,216,234,0.45);line-height:1.7;margin-top:8px">📧 ${c.email||"—"}<br>${c.notes||""}</div><button class="btn btn-red" style="margin-top:10px;padding:5px 10px;font-size:8px" onclick="rmCl('${c.id}')">🗑 REMOVE</button></div>`).join("");
+  const el=document.getElementById("cl2");if(!el)return;
+  el.innerHTML=clis.map(c=>`<div class="panel"><div style="font-size:14px;font-weight:700;color:#fff;margin-bottom:3px">${c.name}</div><div style="font-size:10px;color:rgba(0,245,255,0.35);letter-spacing:2px;margin-bottom:8px">${c.type?.toUpperCase()}</div><span class="tag" style="color:${sc[c.status]||"orange"};border:1px solid ${sc[c.status]||"orange"}44;background:${sc[c.status]||"orange"}12">${c.status?.toUpperCase()}</span><div style="font-size:11px;color:rgba(168,216,234,0.45);line-height:1.7;margin-top:8px">📧 ${c.email||"—"}<br>${c.notes||""}</div><button class="btn btn-red" style="margin-top:10px;padding:5px 10px;font-size:8px" onclick="rmCl('${c.id}')">🗑 REMOVE</button></div>`).join("");
 }
 function tAC(){
   sAC=!sAC;const c=document.getElementById("acf");
   if(!sAC){c.innerHTML="";return;}
   c.innerHTML=`<div class="panel" style="border-color:rgba(255,215,0,0.3);background:rgba(255,215,0,0.02);margin-bottom:12px"><div class="pt" style="color:#ffd700">ADD NEW CLIENT</div><label class="il">NAME *</label><input class="inp" id="cn" placeholder="Company name..."><label class="il">EMAIL</label><input class="inp" type="email" id="ce" placeholder="email@company.com"><label class="il">INDUSTRY</label><select class="inp" id="ct"><option>Manufacturing</option><option>Defence</option><option>Technology</option><option>Animation</option><option>Engineering</option><option>Government</option><option>Other</option></select><label class="il">NOTES</label><input class="inp" id="cno" placeholder="Notes..."><div style="display:flex;gap:8px;margin-top:6px"><button class="btn" onclick="addCl()">✅ SAVE</button><button class="btn btn-red" onclick="tAC()">CANCEL</button></div></div>`;
 }
-function addCl(){
+async function addCl(){
   const n=document.getElementById("cn")?.value.trim();if(!n){nt2("⚠️ Enter name!","#ff6b35");return;}
-  clis.push({id:"C"+String(clis.length+1).padStart(3,"0"),name:n,type:document.getElementById("ct").value,email:document.getElementById("ce").value,notes:document.getElementById("cno").value,status:"active"});
-  sv();sAC=false;document.getElementById("acf").innerHTML="";rCl();nt2("✅ Client added!");uD();
+  const cl={id:"C"+String(clis.length+1).padStart(3,"0"),name:n,type:document.getElementById("ct").value,email:document.getElementById("ce").value,notes:document.getElementById("cno").value,status:"active"};
+  await api("/api/clients","POST",cl);
+  clis.push(cl);sAC=false;document.getElementById("acf").innerHTML="";rCl();nt2("✅ Client added & saved!");uD();
 }
-function rmCl(id){if(!confirm("Remove?"))return;clis=clis.filter(c=>c.id!==id);sv();rCl();nt2("🗑 Removed.","#ff4444");}
+async function rmCl(id){
+  if(!confirm("Remove?"))return;
+  await api("/api/clients/"+id,"DELETE");
+  clis=clis.filter(c=>c.id!==id);rCl();nt2("🗑 Removed.","#ff4444");
+}
 
-// ── AI CHAT ──
-function iC(){if(!CH.length)CH.push({role:"assistant",content:"Hello Amit! I am ARIA — your AR Technologies AI.\n\nNew features:\n🧊 3D Model Viewer — interactive 3D\n🎨 AI Image Generator — design images\n📐 Blueprint Generator — CAD specs\n🎬 Demo Page — show clients\n\nType in any language — Hindi, Gujarati, Tamil, English!"});rC();}
+// ── AI CHAT ───────────────────────────────────────────────
+function iC(){if(!CH.length)CH.push({role:"assistant",content:"Hello Amit! I am ARIA — your AR Technologies AI.\n\nAll data is now saved permanently on the server!\n\n✅ Projects saved to server\n✅ Clients saved to server\n✅ Files saved to server\n🧊 3D Model Viewer\n🎨 AI Image Generator\n📐 Blueprint Generator\n⬇️ 3D Model Downloads\n🔗 Google Drive integration\n🎬 Demo Page\n\nType in any language — Hindi, Gujarati, Tamil, English!"});rC();}
 function rC(){const c=document.getElementById("cm");if(!c)return;c.innerHTML=CH.map(m=>`<div class="msg"><div class="ma ${m.role==="assistant"?"ai":"user"}">${m.role==="assistant"?"AR":"AJ"}</div><div><div class="mn ${m.role==="assistant"?"ai":"user"}">${m.role==="assistant"?"ARIA · AI":"AMIT JOSHI"}</div><div class="mt">${m.content}</div></div></div>`).join("");c.scrollTop=c.scrollHeight;}
-function AQ(q){CH.push({role:"user",content:q});ST("ai",document.querySelectorAll(".tab")[8]);rC();sCAI();}
+function AQ(q){CH.push({role:"user",content:q});ST("ai",document.querySelectorAll(".tab")[11]);rC();sCAI();}
 async function SC(t){
   const inp=document.getElementById("ci2");const msg=(t||inp.value).trim();if(!msg)return;
   inp.value="";document.getElementById("snb").disabled=true;
@@ -764,20 +912,23 @@ async function sCAI(){
   rC();
 }
 
-// ── REVENUE ──
+// ── REVENUE ───────────────────────────────────────────────
 function rRv(){
   const tot=projs.reduce((s,p)=>s+(p.budget||0),0);
-  document.getElementById("rt").textContent="₹"+tot.toLocaleString();
-  document.getElementById("rc").textContent=projs.length;
-  document.getElementById("rbt").innerHTML=Object.entries(TM).map(([k,t])=>{const s=projs.filter(p=>p.type===k).reduce((s,p)=>s+(p.budget||0),0);const ct=projs.filter(p=>p.type===k).length;return `<div class="panel" style="border-color:${t.col}33;background:${t.col}07;display:flex;align-items:center;gap:12px;margin-bottom:8px"><div style="font-size:22px">${t.icon}</div><div style="flex:1"><div style="font-size:9px;letter-spacing:2px;color:${t.col}88">${t.label}</div><div style="font-size:18px;font-weight:900;color:${t.col}">₹${s.toLocaleString()}</div></div><div style="font-size:10px;color:rgba(168,216,234,0.35)">${ct} proj</div></div>`;}).join("");
-  const rt=document.getElementById("rtb");
-  if(!projs.length){rt.innerHTML='<div style="padding:18px;text-align:center;color:rgba(0,245,255,0.2);font-size:11px">NO PROJECTS YET</div>';return;}
-  rt.innerHTML=`<div style="display:grid;grid-template-columns:1fr 70px 80px;padding:8px 12px;border-bottom:1px solid rgba(0,245,255,0.15);font-size:9px;letter-spacing:2px;color:rgba(0,245,255,0.35)"><span>PROJECT</span><span>TYPE</span><span style="text-align:right">BUDGET</span></div>${projs.map(p=>`<div style="display:grid;grid-template-columns:1fr 70px 80px;padding:8px 12px;border-bottom:1px solid rgba(0,245,255,0.06);font-size:12px"><span style="font-weight:700">${TM[p.type]?.icon} ${p.name}</span><span style="color:rgba(168,216,234,0.4);font-size:10px">${p.type}</span><span style="text-align:right;color:#ffd700;font-weight:700">₹${(p.budget||0).toLocaleString()}</span></div>`).join("")}<div style="display:grid;grid-template-columns:1fr 70px 80px;padding:10px 12px;border-top:1px solid rgba(0,245,255,0.18)"><span style="color:rgba(0,245,255,0.4);font-size:10px;letter-spacing:2px">TOTAL</span><span></span><span style="text-align:right;color:#ffd700;font-size:16px;font-weight:900">₹${tot.toLocaleString()}</span></div>`;
+  if(document.getElementById("rt"))document.getElementById("rt").textContent="₹"+tot.toLocaleString();
+  if(document.getElementById("rc"))document.getElementById("rc").textContent=projs.length;
+  const rbt=document.getElementById("rbt");
+  if(rbt)rbt.innerHTML=Object.entries(TM).map(([k,t])=>{const s=projs.filter(p=>p.type===k).reduce((s,p)=>s+(p.budget||0),0);const ct=projs.filter(p=>p.type===k).length;return `<div class="panel" style="border-color:${t.col}33;background:${t.col}07;display:flex;align-items:center;gap:12px;margin-bottom:8px"><div style="font-size:22px">${t.icon}</div><div style="flex:1"><div style="font-size:9px;letter-spacing:2px;color:${t.col}88">${t.label}</div><div style="font-size:18px;font-weight:900;color:${t.col}">₹${s.toLocaleString()}</div></div><div style="font-size:10px;color:rgba(168,216,234,0.35)">${ct} proj</div></div>`;}).join("");
+  const rtb=document.getElementById("rtb");
+  if(!rtb)return;
+  if(!projs.length){rtb.innerHTML='<div style="padding:18px;text-align:center;color:rgba(0,245,255,0.2);font-size:11px">NO PROJECTS YET</div>';return;}
+  rtb.innerHTML=`<div style="display:grid;grid-template-columns:1fr 70px 80px;padding:8px 12px;border-bottom:1px solid rgba(0,245,255,0.15);font-size:9px;letter-spacing:2px;color:rgba(0,245,255,0.35)"><span>PROJECT</span><span>TYPE</span><span style="text-align:right">BUDGET</span></div>${projs.map(p=>`<div style="display:grid;grid-template-columns:1fr 70px 80px;padding:8px 12px;border-bottom:1px solid rgba(0,245,255,0.06);font-size:12px"><span style="font-weight:700">${TM[p.type]?.icon} ${p.name}</span><span style="color:rgba(168,216,234,0.4);font-size:10px">${p.type}</span><span style="text-align:right;color:#ffd700;font-weight:700">₹${(p.budget||0).toLocaleString()}</span></div>`).join("")}<div style="display:grid;grid-template-columns:1fr 70px 80px;padding:10px 12px;border-top:1px solid rgba(0,245,255,0.18)"><span style="color:rgba(0,245,255,0.4);font-size:10px;letter-spacing:2px">TOTAL</span><span></span><span style="text-align:right;color:#ffd700;font-size:16px;font-weight:900">₹${tot.toLocaleString()}</span></div>`;
 }
 
-// ── TRANSLATE ──
+// ── TRANSLATE ─────────────────────────────────────────────
 function bLS(){
-  const s=document.getElementById("tt2");LGS.forEach(l=>s.appendChild(new Option(`${l.f} ${l.nat} (${l.n})`,l.n)));
+  const s=document.getElementById("tt2");if(!s)return;
+  LGS.forEach(l=>s.appendChild(new Option(`${l.f} ${l.nat} (${l.n})`,l.n)));
   const ic=document.getElementById("ic"),wc=document.getElementById("wc2");
   LGS.filter(l=>l.g==="i").forEach(l=>{const c=document.createElement("span");c.className="lch";c.textContent=`${l.f} ${l.nat}`;c.onclick=()=>{document.querySelectorAll("#ic .lch").forEach(x=>x.classList.remove("sel"));c.classList.add("sel");document.getElementById("tt2").value=l.n;};ic.appendChild(c);});
   LGS.filter(l=>l.g==="w").forEach(l=>{const c=document.createElement("span");c.className="lch";c.textContent=`${l.f} ${l.n}`;c.onclick=()=>{document.querySelectorAll("#wc2 .lch").forEach(x=>x.classList.remove("sel"));c.classList.add("sel");document.getElementById("tt2").value=l.n;};wc.appendChild(c);});
